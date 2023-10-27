@@ -1,14 +1,30 @@
 .tabs {
 }
+
 .no-transition-global {
 }
+
 .tabs__controls {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 0 0 51px 0;
 }
+
 .tabs__control {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  border: none;
+  background-color: transparent;
 }
-.button {
-}
+
 .tabs__content {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+
 }
 
 .tabs__element {
