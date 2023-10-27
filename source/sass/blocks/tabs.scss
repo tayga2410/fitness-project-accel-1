@@ -5,10 +5,10 @@
 }
 
 .tabs__controls {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    margin: 0 0 51px 0;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin: 0 0 51px 0;
 }
 
 .tabs__control {
@@ -18,16 +18,17 @@
   line-height: 20px;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
-.tabs__content {
-    display: flex;
-    gap: 40px;
-    flex-wrap: wrap;
-
+.tabs__list {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 0;
 }
 
-.tabs__element {
+.tabs__item {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -36,7 +37,18 @@
   height: 448px;
   flex-shrink: 0;
   background: #fff;
+
+  &--is-selected {
+    border: 7px solid;
+    border-image: linear-gradient(
+        to right,
+        rgba(209, 10, 66, 1),
+        rgba(0, 53, 159, 1)
+      )
+      1;
+  }
 }
+
 .tabs__title {
   color: #102654;
   text-align: center;
@@ -99,4 +111,10 @@
   text-transform: uppercase;
   padding: 27px 44px;
   border: 2px solid #102654;
+
+  &--is-selected {
+    color: #fff;
+    border: none;
+    background: var(--1, linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%));
+  }
 }
