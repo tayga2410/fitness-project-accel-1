@@ -38,3 +38,44 @@
   font-weight: 800;
   src: url('../../fonts/alumni-sans-v18-cyrillic_latin-800.woff2') format('woff2'); 
 }
+
+/* roboto-condensed-regular - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-condensed-v27-cyrillic_latin-regular.woff2') format('woff2'); 
+}
+/* roboto-condensed-500 - cyrillic_latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/roboto-condensed-v27-cyrillic_latin-500.woff2') format('woff2'); 
+}
+/* roboto-condensed-600 - cyrillic_latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/roboto-condensed-v27-cyrillic_latin-600.woff2') format('woff2'); 
+}
+/* roboto-condensed-700 - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-condensed-v27-cyrillic_latin-700.woff2') format('woff2'); 
+}
+/* roboto-condensed-800 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/roboto-condensed-v27-cyrillic_latin-800.woff2') format('woff2'); 
+}

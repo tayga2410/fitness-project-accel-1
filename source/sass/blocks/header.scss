@@ -2,16 +2,30 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 0;
+  padding: 30px 103px;
+  background: linear-gradient(
+    90deg,
+    #1c3477 0%,
+    #1c3477 0.01%,
+    #1a3578 39.11%,
+    #73184b 75.5%,
+    #b4022a 100%
+  );
 }
 
 .header__logo {
   color: #fff;
-  font-family: Roboto Condensed;
   font-size: 26px;
   font-style: normal;
   font-weight: 700;
-  line-height: 26px; /* 100% */
+  line-height: 26px;
+  text-transform: uppercase;
 }
 .header_telephone {
+  color: #fff;
+  text-align: right;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
 }
