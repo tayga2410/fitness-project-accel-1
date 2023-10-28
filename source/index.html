@@ -142,23 +142,39 @@
         </div>
       </section>
       <section class="games">
-        <div class="games__container">
+        <div class="games__container container"></div>
+        <div class="games__wrapper">
           <div class="games__text-wrapper">
             <h2 class="games__title">Super Games</h2>
-            <div class="games__date">
+            <div class="games__information">
               <span class="games__small-title">Дата</span>
               <span class="games__count">7</span>
               <span class="games__text">Марта 2019</span>
             </div>
-            <div class="games__time">
-              <span class="games__small-title">Время</span>
+            <div class="games__information">
+              <span class="games__small-title games__small-title--divider">Время</span>
               <span class="games__count">12:00</span>
             </div>
             <p class="games__description">Ежегодные соревнования по CrossFit</p>
-            <button class="games__button button">заполнить заявку</button>
+            <button class="games__button button" type="button">заполнить заявку</button>
           </div>
           <div class="games__image-wrapper">
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)"
+                srcset="img/games-picture-mobile.webp 1x, img/games-picture-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 767px)"
+                srcset="img/games-picture-mobile.png 1x, img/games-picture-mobile@2x.png 2x">
+              <source type="image/webp" media="(max-width: 1365px)"
+                srcset="img/games-picture-tablet.webp 1x, img/games-picture-tablet@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1365px)"
+                srcset="img/games-picture-tablet.png 1x, img/games-picture-tablet@2x.png 2x">
+              <img src="img/games-picture-desktop.png" widht="660" height="500"
+                srcset="img/games-picture-desktop@2x.png 2x" alt="">
+            </picture>
           </div>
+        </div>
+        <div class="games__wrapper swiper">
+          <h3 class="swiper__title">Жюри</h3>
         </div>
       </section>
 
