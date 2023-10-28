@@ -1,7 +1,7 @@
 import swiper from "./swiper";
 
 const initSwiper = () => {
-const Swiper = new swiper('.swiper', {
+  const mySwiper = new swiper('.swiper', {
     // Optional parameters
     loop: true,
     slidesPerView: 4,
@@ -16,4 +16,4 @@ const Swiper = new swiper('.swiper', {
   });
 }
 
-  export default initSwiper();
+  export default initSwiper;
