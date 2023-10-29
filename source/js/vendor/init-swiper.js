@@ -1,11 +1,11 @@
 import swiper from "./swiper";
 
-const initSwiper = () => {
-  const mySwiper = new swiper('.swiper', {
+const mySwiper = new swiper('.swiper', {
     // Optional parameters
     loop: true,
     slidesPerView: 4,
     spaceBetween: 40,
+    
   
     // Navigation arrows
     navigation: {
@@ -14,6 +14,6 @@ const initSwiper = () => {
     },
   
   });
-}
 
-  export default initSwiper;
+
+  export default mySwiper;

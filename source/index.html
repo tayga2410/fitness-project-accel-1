@@ -103,67 +103,37 @@
       <section class="subscription">
         <div class="subscription__container container">
           <h2 class="subscription__title tabs">Абонементы</h2>
-          <div class="tabs no-transition-global" data-tabs="parent" data-height="max">
+          <div class="tabs">
             <div class="tabs__controls" data-tabs="controls">
-              <button class="tabs__control button" type="button" data-tabs="control">1 месяц</button>
-              <button class="tabs__control button" type="button" data-tabs="control">6 месяцев</button>
-              <button class="tabs__control button" type="button" data-tabs="control">12 месяцев</button>
+              <button class="tabs__control button" type="button" data-period="1">1 месяц</button>
+              <button class="tabs__control button" type="button" data-period="6">6 месяцев</button>
+              <button class="tabs__control button" type="button" data-period="12">12 месяцев</button>
             </div>
             <ul class="tabs__list">
               <li class="tabs__item">
                 <h4 class="tabs__title">С тренером</h4>
                 <p class="tabs__description">12 занятий</p>
-                <div class="tabs__price-wrapper" data-tabs="content">
-                  <div class="tabs__element-wrapper" data-tabs="element">
-                    <span class="tabs__price">5000</span>
-                    <span class="tabs__faded-price">5000</span>
-                  </div>
-                  <div class="tabs__element-wrapper" data-tabs="element">
-                    <span class="tabs__price">9999</span>
-                    <span class="tabs__faded-price">9999</span>
-                  </div>
-                  <div class="tabs__element-wrapper" data-tabs="element">
-                    <span class="tabs__price">1111</span>
-                    <span class="tabs__faded-price">11111</span>
-                  </div>
+                <div class="tabs__price-wrapper">
+                  <span class="tabs__price">5000</span>
+                  <span class="tabs__faded-price">5000</span>
                 </div>
                 <button class="tabs__button button" type="button">Купить абонемент</button>
               </li>
               <li class="tabs__item tabs__item--is-selected">
                 <h4 class="tabs__title">Дневной</h4>
                 <p class="tabs__description">с 8:00 до 17:00</p>
-                <div class="tabs__price-wrapper" data-tabs="content">
-                  <div class="tabs__element-wrapper" data-tabs="element">
-                    <span class="tabs__price">5000</span>
-                    <span class="tabs__faded-price">5000</span>
-                  </div>
-                  <div class="tabs__element-wrapper" data-tabs="element">
-                    <span class="tabs__price">9999</span>
-                    <span class="tabs__faded-price">9999</span>
-                  </div>
-                  <div class="tabs__element-wrapper" data-tabs="element">
-                    <span class="tabs__price">1111</span>
-                    <span class="tabs__faded-price">11111</span>
-                  </div>
+                <div class="tabs__price-wrapper">
+                  <span class="tabs__price">1700</span>
+                  <span class="tabs__faded-price">1700</span>
                 </div>
                 <button class="tabs__button tabs__button--is-selected button" type="button">Купить абонемент</button>
               </li>
               <li class="tabs__item">
                 <h4 class="tabs__title">Полный день</h4>
                 <p class="tabs__description">с 8:00 до 22:00 </p>
-                <div class="tabs__price-wrapper" data-tabs="content">
-                  <div class="tabs__element-wrapper" data-tabs="element">
-                    <span class="tabs__price">5000</span>
-                    <span class="tabs__faded-price">5000</span>
-                  </div>
-                  <div class="tabs__element-wrapper" data-tabs="element">
-                    <span class="tabs__price">9999</span>
-                    <span class="tabs__faded-price">9999</span>
-                  </div>
-                  <div class="tabs__element-wrapper" data-tabs="element">
-                    <span class="tabs__price">1111</span>
-                    <span class="tabs__faded-price">11111</span>
-                  </div>
+                <div class="tabs__price-wrapper">
+                  <span class="tabs__price">2700</span>
+                  <span class="tabs__faded-price">2700</span>
                 </div>
                 <button class="tabs__button button" type="button">Купить абонемент</button>
               </li>
@@ -331,6 +301,60 @@
           </div>
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
+        </div>
+      </section>
+      <section class="advantages">
+        <div class="advantages__container container">
+          <h2 class="advantages__title">Наши Преимущества</h2>
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <div class="advantages__count-wrapper">
+                <span class="advantages__count">900</span>
+                <span class="advantages__sub-count">кв/м</span>
+              </div>
+              <div class="advantages__text-wrapper">
+                <h4 class="advantages__item-title">Площадь</h4>
+                <p class="advantages__description">Занимайтесь без очередей и толкучки</p>
+              </div>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__count-wrapper">
+                <span class="advantages__count">70</span>
+                <span class="advantages__sub-count">машин</span>
+              </div>
+              <div class="advantages__text-wrapper">
+                <h4 class="advantages__item-title">Собственная парковка</h4>
+                <p class="advantages__description">Вы всегда найдете место для своей машины на нашей парковке</p>
+              </div>
+            </li>
+            <li class="advantages__item advantages__item--element">
+                <span class="advantages__element-count">100</span>
+              <div class="advantages__element-wrapper">
+                <span class="advantages__element-text">Тренажеров</span>
+                <p class="advantages__element-description">Современные тренажеры на все группы мышц</p>
+              </div>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__count-wrapper">
+                <span class="advantages__count">350</span>
+                <span class="advantages__sub-count">мест</span>
+              </div>
+              <div class="advantages__text-wrapper">
+                <h4 class="advantages__item-title">Комфорт</h4>
+                <p class="advantages__description">Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
+              </div>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__count-wrapper">
+                <span class="advantages__count">5+</span>
+                <span class="advantages__sub-count">лет  </span>
+              </div>
+              <div class="advantages__text-wrapper">
+                <h4 class="advantages__item-title">Тренерский опыт</h4>
+                <p class="advantages__description">Добивайтесь своих целей быстрее с профессиональным тренером</p>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
 
