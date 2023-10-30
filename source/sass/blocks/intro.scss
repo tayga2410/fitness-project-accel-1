@@ -1,5 +1,5 @@
 .intro {
-  color: #fff;
+  color: $color-default-white;
 }
 
 .intro__container {
@@ -92,6 +92,6 @@
   margin: 0 0 0 42px;
   grid-column: 2 / 3;
   background-color: transparent;
-  border: 2px solid #fff;
-  color: #fff;
+  border: 2px solid $color-default-white;
+  color: $color-default-white;
 }

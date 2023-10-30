@@ -4,7 +4,7 @@
 }
 
 .games__text-wrapper {
-  color: #fff;
+  color: $color-default-white;
   background: #ed0233;
   padding: 80px;
   display: grid;
@@ -51,7 +51,7 @@
     display: block;
     width: 64px;
     height: 1px;
-    background-color: #fff;
+    background-color: $color-default-white;
     bottom: -8px;
   }
 
@@ -62,7 +62,7 @@
       display: block;
       width: 92px;
       height: 1px;
-      background-color: #fff;
+      background-color: $color-default-white;
       bottom: -8px;
     }
   }
@@ -101,6 +101,6 @@
   letter-spacing: 0.6px;
   text-transform: uppercase;
   background-color: transparent;
-  color: #fff;
-  border: 2px solid #fff;
+  color: $color-default-white;
+  border: 2px solid $color-default-white;
 }

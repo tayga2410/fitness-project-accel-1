@@ -32,7 +32,7 @@
     width: 360px;
     height: 448px;
     flex-shrink: 0;
-    background: #fff;
+    background: $color-default-white;
 
     .is-selected {
       border: 7px solid;
@@ -99,7 +99,7 @@
 }
 
 .tabs__button {
-  background-color: #fff;
+  background-color: $color-default-white;
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
@@ -110,7 +110,7 @@
   border: 2px solid #102654;
 
   &--is-selected {
-    color: #fff;
+    color: $color-default-white;
     border: none;
     background: var(--1, linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%));
   }
