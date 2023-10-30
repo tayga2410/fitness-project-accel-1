@@ -12,12 +12,10 @@
 // ---------------------------------
 
 @import "vendor/normalize";
-@import "vendor/swiper";
 // Blocks
 // ---------------------------------
 
 @import "blocks/button";
-@import "blocks/modal";
 @import "blocks/custom-input";
 @import "blocks/custom-toggle";
 @import "blocks/custom-select";
@@ -25,10 +23,11 @@
 @import "blocks/intro";
 @import "blocks/about";
 @import "blocks/subscription";
-@import "blocks/tabs";
 @import "blocks/games";
 @import "blocks/advantages";
 @import "blocks/promo";
+@import "blocks/faq";
+@import "blocks/swiper";
 
 // ---------------------------------
 

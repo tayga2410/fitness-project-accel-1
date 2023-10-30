@@ -1,0 +1,38 @@
+.faq {
+  h2 {
+    font-family: $ff-alumni;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 54px;
+    letter-spacing: 1.62px;
+    margin: 0 0 70px 0;
+    padding: 120px 0 0 103px;
+  }
+}
+.faq__container {
+  padding: 0 103px 120px 103px;
+}
+
+.faq__tabs {
+}
+.faq__tabs-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.faq__tab-control {
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  padding: 18px 48px;
+  width: 260px;
+  background-color: $color-default-white;
+  border: 1px solid rgba(16, 38, 84, 0.2);
+}
+.button {
+}
+.is-selected {
+}

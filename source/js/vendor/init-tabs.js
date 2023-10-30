@@ -1,7 +1,7 @@
 function initTabs() {
-  const buttons = document.querySelectorAll('.tabs__controls button');
-  const prices = document.querySelectorAll('.tabs__price-wrapper > span:first-child');
-  const fadedPrices = document.querySelectorAll('.tabs__price-wrapper > span:nth-child(2)');
+  const buttons = document.querySelectorAll('.subscription__tabs-controls button');
+  const prices = document.querySelectorAll('.subscription__price-wrapper > span:first-child');
+  const fadedPrices = document.querySelectorAll('.subscription__price-wrapper > span:nth-child(2)');
 
   const pricesPerPeriod = [
     [5000, 1700, 2700],
@@ -20,10 +20,10 @@ function initTabs() {
       });
 
       buttons.forEach((btn) => {
-        btn.classList.remove('tabs__button--is-selected');
+        btn.classList.remove('subscription__button--is-selected');
       });
 
-      button.classList.add('tabs__button--is-selected');
+      button.classList.add('subscription__button--is-selected');
     });
   });
 }
