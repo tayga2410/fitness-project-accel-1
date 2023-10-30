@@ -7,42 +7,42 @@
 
 .about__text-wrapper {
   width: 350px;
-}
 
-.about__title {
-  font-family: $ff-alumni;
-  font-size: 54px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 54px;
-  letter-spacing: 1.62px;
-  margin: 0 0 25px 0;
-}
+  h2 {
+    font-family: $ff-alumni;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 54px;
+    letter-spacing: 1.62px;
+    margin: 0 0 25px 0;
+  }
 
-.about__overview {
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 22px;
-  margin: 0 0 95px 0;
-}
+  h3 {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    margin: 0 0 95px 0;
+  }
 
-.about__description {
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 24px; /* 150% */
-  margin: 0;
+  p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px; /* 150% */
+    margin: 0;
+  }
 }
 
 .about__media-wrapper {
   position: relative;
-}
 
-.about__image {
+  img {
     object-fit: cover;
-  background: rgba(20, 54, 122, 0.5);
-}
+    background: rgba(20, 54, 122, 0.5);
+  }
+}w
 
 .about__iframe-wrapper {
   position: absolute;

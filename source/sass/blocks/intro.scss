@@ -14,6 +14,10 @@
     #b4022a 100%
   );
   padding: 0 0 120px 103px;
+
+  img {
+    background: rgba(20, 54, 122, 0.5);
+  }
 }
 
 .intro__text-wrapper {
@@ -22,52 +26,52 @@
   width: 385px;
   height: 400px;
   padding: 62px 0 0 0;
-}
 
-.intro__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
 
-.intro__item {
-  text-align: right;
-  font-family: $ff-placeholder;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 22px;
-}
+  li {
+    text-align: right;
+    font-family: $ff-placeholder;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+  }
 
-.intro__city {
-  text-align: right;
-  font-family: $ff-alumni;
-  font-size: 54px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 54px;
-  letter-spacing: 1.62px;
-  text-transform: uppercase;
-  margin: 0;
-  padding: 0;
-  grid-column: span 2;
-  margin: 0 0 10px 0;
-}
+  p {
+    text-align: right;
+    font-family: $ff-alumni;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 54px;
+    letter-spacing: 1.62px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    grid-column: span 2;
+    margin: 0 0 10px 0;
+  }
 
-.intro__title {
-  text-align: right;
-  font-family: $ff-alumni;
-  font-size: 92px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 110px;
-  letter-spacing: 4.6px;
-  text-transform: uppercase;
-  margin: 0 0 50px 0;
-  padding: 0;
+  h2 {
+    text-align: right;
+    font-family: $ff-alumni;
+    font-size: 92px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 110px;
+    letter-spacing: 4.6px;
+    text-transform: uppercase;
+    margin: 0 0 50px 0;
+    padding: 0;
+  }
 }
 
 .intro__button {
@@ -90,8 +94,4 @@
   background-color: transparent;
   border: 2px solid #fff;
   color: #fff;
-}
-
-.intro__image {
-  background: rgba(20, 54, 122, 0.5);
 }

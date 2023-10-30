@@ -15,50 +15,53 @@
   cursor: pointer;
 }
 
-.tabs__list {
-  display: flex;
-  gap: 40px;
-  flex-wrap: wrap;
-  padding: 0;
-}
-
-.tabs__item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 360px;
-  height: 448px;
-  flex-shrink: 0;
-  background: #fff;
-
-  &--is-selected {
-    border: 7px solid;
-    border-image: linear-gradient(
-        to right,
-        rgba(209, 10, 66, 1),
-        rgba(0, 53, 159, 1)
-      )
-      1;
+.tabs {
+  ul {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
   }
-}
 
-.tabs__title {
-  color: #102654;
-  text-align: center;
-  font-size: 26px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 26px;
-  margin: 0 0 11px 0;
-}
+  li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 360px;
+    height: 448px;
+    flex-shrink: 0;
+    background: #fff;
 
-.tabs__description {
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 24px;
-  margin: 0 0 12px 0;
+    .is-selected {
+      border: 7px solid;
+      border-image: linear-gradient(
+          to right,
+          rgba(209, 10, 66, 1),
+          rgba(0, 53, 159, 1)
+        )
+        1;
+    }
+  }
+
+  h4 {
+    color: #102654;
+    text-align: center;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    margin: 0 0 11px 0;
+  }
+
+  p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    margin: 0 0 12px 0;
+  }
 }
 
 .tabs__price-wrapper {
@@ -67,32 +70,32 @@
   text-align: center;
   padding: 54px 62px 6px 19px;
   margin: 0 0 29px 0;
-}
 
-.tabs__price {
-  color: #103aae;
-  font-size: 60px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 150%;
-  position: relative;
-  z-index: 2;
-}
+  span {
+    color: #103aae;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    position: relative;
+    z-index: 2;
+  }
 
-.tabs__faded-price {
-  color: #e8e8e8;
-  font-size: 100px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 150%;
-  opacity: 0.48;
-  width: 203px;
-  height: 150px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
+  span + span {
+    color: #e8e8e8;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    opacity: 0.48;
+    width: 203px;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
 }
 
 .tabs__button {

@@ -11,21 +11,17 @@
     #73184b 75.5%,
     #b4022a 100%
   );
-}
 
-.header__logo {
-  color: #fff;
-  font-size: 26px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 26px;
-  text-transform: uppercase;
-}
-.header__telephone {
-  color: #fff;
-  text-align: right;
-  font-size: 26px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 26px;
+  img {
+    display: block;
+  }
+
+  a + a {
+    color: #fff;
+    text-align: right;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+  }
 }

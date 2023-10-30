@@ -1,7 +1,7 @@
 function initTabs() {
   const buttons = document.querySelectorAll('.tabs__controls button');
-  const prices = document.querySelectorAll('.tabs__price');
-  const fadedPrices = document.querySelectorAll('.tabs__faded-price');
+  const prices = document.querySelectorAll('.tabs__price-wrapper > span:first-child');
+  const fadedPrices = document.querySelectorAll('.tabs__price-wrapper > span:nth-child(2)');
 
   const pricesPerPeriod = [
     [5000, 1700, 2700],
