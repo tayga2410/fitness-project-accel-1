@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import mySwiper from './vendor/init-swiper';
 import initTabs from './vendor/init-tabs';
+import initAccordion from './vendor/init-accordion';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -17,6 +18,7 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     initModals();
     initTabs();
+    initAccordion();
     // eslint-disable-next-line no-unused-expressions
     mySwiper;
     const form = new Form();
@@ -24,7 +26,6 @@ window.addEventListener('DOMContentLoaded', () => {
     form.init();
   });
 });
-
 
 // script.js
 

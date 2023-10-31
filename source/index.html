@@ -107,7 +107,7 @@
             <div class="subscription__tabs-controls" data-tabs="controls">
               <button class="subscription__tabs-control button" type="button">1 месяц</button>
               <button class="subscription__tabs-control button" type="button">6 месяцев</button>
-              <button class="subscription__tabs-control button" type="button" >12 месяцев</button>
+              <button class="subscription__tabs-control button" type="button">12 месяцев</button>
             </div>
             <ul>
               <li>
@@ -126,7 +126,8 @@
                   <span>1700</span>
                   <span>1700</span>
                 </div>
-                <button class="subscription__button subscription__button--is-selected button" type="button">Купить абонемент</button>
+                <button class="subscription__button subscription__button--is-selected button" type="button">Купить
+                  абонемент</button>
               </li>
               <li>
                 <h4>Полный день</h4>
@@ -143,42 +144,42 @@
       </section>
       <section class="games">
         <div class="games__container container">
-        <div class="games__wrapper">
-          <div class="games__text-wrapper">
-            <h2 class="games__title">Super Games</h2>
-            <div class="games__information">
-              <span class="games__small-title">Дата</span>
-              <span class="games__count">7</span>
-              <span class="games__text">Марта 2019</span>
+          <div class="games__wrapper">
+            <div class="games__text-wrapper">
+              <h2 class="games__title">Super Games</h2>
+              <div class="games__information">
+                <span class="games__small-title">Дата</span>
+                <span class="games__count">7</span>
+                <span class="games__text">Марта 2019</span>
+              </div>
+              <div class="games__information">
+                <span class="games__small-title games__small-title--divider">Время</span>
+                <span class="games__count">12:00</span>
+              </div>
+              <p class="games__description">Ежегодные соревнования по CrossFit</p>
+              <button class="games__button button" type="button">заполнить заявку</button>
             </div>
-            <div class="games__information">
-              <span class="games__small-title games__small-title--divider">Время</span>
-              <span class="games__count">12:00</span>
+            <div class="games__image-wrapper">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/games-picture-mobile.webp 1x, img/games-picture-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/games-picture-mobile.png 1x, img/games-picture-mobile@2x.png 2x">
+                <source type="image/webp" media="(max-width: 1365px)"
+                  srcset="img/games-picture-tablet.webp 1x, img/games-picture-tablet@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1365px)"
+                  srcset="img/games-picture-tablet.png 1x, img/games-picture-tablet@2x.png 2x">
+                <img src="img/games-picture-desktop.png" width="660" height="500"
+                  srcset="img/games-picture-desktop@2x.png 2x" alt="">
+              </picture>
             </div>
-            <p class="games__description">Ежегодные соревнования по CrossFit</p>
-            <button class="games__button button" type="button">заполнить заявку</button>
-          </div>
-          <div class="games__image-wrapper">
-            <picture>
-              <source type="image/webp" media="(max-width: 767px)"
-                srcset="img/games-picture-mobile.webp 1x, img/games-picture-mobile@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 767px)"
-                srcset="img/games-picture-mobile.png 1x, img/games-picture-mobile@2x.png 2x">
-              <source type="image/webp" media="(max-width: 1365px)"
-                srcset="img/games-picture-tablet.webp 1x, img/games-picture-tablet@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 1365px)"
-                srcset="img/games-picture-tablet.png 1x, img/games-picture-tablet@2x.png 2x">
-              <img src="img/games-picture-desktop.png" width="660" height="500"
-                srcset="img/games-picture-desktop@2x.png 2x" alt="">
-            </picture>
           </div>
         </div>
-      </div>
       </section>
 
-      <section class="swiper-container">
+      <section class="swiper-jouri">
         <h3 class="swiper-title">Жюри</h3>
-        <div class="swiper container">
+        <div class="swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <picture>
@@ -404,15 +405,132 @@
         <div class="faq__container container">
           <div class="faq__tabs">
             <div class="faq__tabs-controls" data-tabs="controls">
-              <button class="faq__tab-control button is-selected" type="button">Центр</button>
-              <button class="faq__tab-control button" type="button">Абонемент</button>
-              <button class="faq__tab-control button" type="button">Услуги</button>
-              <button class="faq__tab-control button" type="button">Правила</button>
+              <button class="faq__tab-control button is-selected" type="button" data-target="center">Центр</button>
+              <button class="faq__tab-control button" type="button" data-target="subscription">Абонемент</button>
+              <button class="faq__tab-control button" type="button" data-target="services">Услуги</button>
+              <button class="faq__tab-control button" type="button" data-target="rules">Правила</button>
             </div>
           </div>
-          <div class="faq__accordion"></div>
+          <div class="faq__accordion-wrapper" data-target="center">
+            <ul>
+              <li>
+                <h5>Как стать членом фитнес-центра?</h5>
+                <button class="faq__button button">Открытая информацию</button>
+                <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При
+                  покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.</p>
+              </li>
+              <li>
+                <h5>Где можно посмотреть расписание?</h5>
+                <button class="faq__button button">Закрытая Информация</button>
+                <p>Вы всегда можете посмотреть на сайте в разделе "раписание", а так же уточнить по номеру
+                  8-800-555-55-55
+                </p>
+              </li>
+              <li>
+                <h5>Есть кулеры в центре? Предоставляются полотенца?</h5>
+                <button class="faq__button button">Закрытая Информация</button>
+                <p>Кулеры расположены в разных концах зала для удобства наших клиентов, так же выдаются чистые
+                  полотенца, прошедшие термообработку</p>
+              </li>
+              <li>
+                <h5>Сколько тренеров работает в клубе и какова их квалификация?</h5>
+                <button class="faq__button button">Закрытая Информация</button>
+                <p>в нашем клубе работает 8 тренеров, из которых 7 мастеров спорта и 1 победительница чемпионата мира по
+                  легкой атлетике</p>
+              </li>
+            </ul>
+
+          </div>
+          <div class="faq__accordion-wrapper" data-target="subscription">
+            <ul>
+              <li>
+                <h5>Занятия с тренером входят в абонемент?</h5>
+                <button class="faq__button button">Открытая информация</button>
+                <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда
+                  присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по
+                  тренажеру или технике выполнения упражнения..</p>
+              </li>
+              <li>
+                <h5>Можно ли заморозить абонемент?</h5>
+                <button class="faq__button button">Закрытая Информация</button>
+                <p>Заморозьте абонемент в 1 клик на сайте omsk-supergym.ru или позвоните нам по телефону 8-800-555-55-55
+                </p>
+              </li>
+              <li>
+                <h5>Есть ли лимит по посещениям тренажерного зала и групповых занятий?</h5>
+                <button class="faq__button button">Закрытая Информация</button>
+                <p>Приобретая наш безлимитный пакет, Вы можете посещать зал в любое время!</p>
+              </li>
+              <li>
+                <h5>Что такое семейный доступ и доступ для друзей?</h5>
+                <button class="faq__button button">Закрытая Информация</button>
+                <p>Члены семьи могут воспользоваться Вашим абонементом без ограничений, а так же действует акция
+                  "приведи друга". подробней по телефону</p>
+              </li>
+            </ul>
+          </div>
+          <div class="faq__accordion-wrapper" data-target="services">
+            <ul>
+              <li>
+                <h5>Предлагает ли клуб услуги
+                  по консультированию
+                  по вопросам питания?</h5>
+                <button class="faq__button button">Открытая информация</button>
+                <p>Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши
+                  данные, цели и предложит программу питания.</p>
+              </li>
+              <li>
+                <h5>Проводятся ли в клубе какие-либо мероприятия или соревнования?</h5>
+                <button class="faq__button button">Закрытая Информация</button>
+                <p>Соревнования и мероприятия проводятся 1 раз в 2 месяца.
+                </p>
+              </li>
+              <li>
+                <h5>Можно ли приобрести в центре спортивное питание?</h5>
+                <button class="faq__button button">Закрытая Информация</button>
+                <p>Для Вашего удобства работает точка спортивного питания при входе в центр.</p>
+              </li>
+              <li>
+                <h5>Есть ли в центре детская комната?</h5>
+                <button class="faq__button button">Закрытая Информация</button>
+                <p>Для досуга Ваших деток мы специально оборудовали не комнату, а целый зал для детских развлечений. Все
+                  безопасно! убедитесь сами.</p>
+              </li>
+            </ul>
+          </div>
+          <div class="faq__accordion-wrapper" data-target="rules">
+            <ul>
+              <li>
+                <h5>Есть в фитнес-центре дресс-код?</h5>
+                <button class="faq__button button">Открытая информация</button>
+                <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя
+                  и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты,
+                  кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и
+                  т. п., исключения составляют специальные классы (например, йога, пилатес). </p>
+              </li>
+              <li>
+                <h5>Можно ли приводить с собой детей на тренировки?</h5>
+                <button class="faq__button button">Закрытая Информация</button>
+                <p>Ваши дети могут провести время в специально оборудованном детском зале
+                </p>
+              </li>
+              <li>
+                <h5>Какие дополнительные правила посещения центра?</h5>
+                <button class="faq__button button">Закрытая Информация</button>
+                <p>Посещение зала в наркотическом и алкогольном опьянении строго запрещены.</p>
+              </li>
+              <li>
+                <h5>Нужна ли медицинская справка для посещения залов и бассейна?</h5>
+                <button class="faq__button button">Закрытая Информация</button>
+                <p>Справка 084 о состоянии здоровья нужна непосредственно для поддержания здоровой атмосферы в нашем
+                  зале</p>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
+
+      
 
     </main>
     <footer>

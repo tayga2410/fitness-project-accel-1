@@ -1,4 +1,5 @@
 .faq {
+  background: #f8f9fc;
   h2 {
     font-family: $ff-alumni;
     font-size: 54px;
@@ -12,15 +13,16 @@
 }
 .faq__container {
   padding: 0 103px 120px 103px;
+  display: flex;
+  gap: 40px;
 }
 
-.faq__tabs {
-}
 .faq__tabs-controls {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
+
 .faq__tab-control {
   text-align: center;
   font-size: 18px;
@@ -32,7 +34,120 @@
   background-color: $color-default-white;
   border: 1px solid rgba(16, 38, 84, 0.2);
 }
-.button {
+
+.faq__accordion-wrapper {
+  ul {
+    list-style-type: none;
+    padding: 25px 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 58px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background: rgba(28, 51, 116, 0.2);
+      top: 0;
+    }
+  }
+
+  li {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 860px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background: rgba(28, 51, 116, 0.2);
+      bottom: -25px;
+    }
+  }
+
+  h5 {
+    margin: 0 auto 0 0;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  p {
+    display: none;
+    margin: 12px 0 0 0;
+    color: #102654;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    width: 660px;
+  }
 }
-.is-selected {
+
+.faq__button {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid #1c3374;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 0;
+  position: relative;
+}
+
+.faq__button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 1px;
+  background-color: #1c3374;
+  transform: translate(-50%, -50%);
+}
+
+.faq__button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1px;
+  height: 20px;
+  background-color: #1c3374;
+  transform: translate(-50%, -50%);
+}
+
+.faq__button.is-opened::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #1c3374;
+  transform: translate(-50%, -50%);
+}
+
+.faq__button.is-opened::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 1px;
+  background-color: $color-default-white;
+  transform: translate(-50%, -50%);
 }
