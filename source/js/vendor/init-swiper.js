@@ -1,19 +1,25 @@
 import swiper from "./swiper";
 
-const mySwiper = new swiper('.swiper', {
-    // Optional parameters
-    loop: true,
-    slidesPerView: 4,
-    spaceBetween: 40,
-    
-  
-    // Navigation arrows
+function initSwiper(selector, options) {
+  return new swiper(selector, {
+    loop: false,
+    ...options,
+
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '[data-swiper="button-next"]',
+      prevEl: '[data-swiper="button-prev"]',
     },
-  
   });
+}
 
+const jurySwiper = initSwiper('[data-swiper="juri-swiper"] [data-swiper="swiper"]', {
+  slidesPerView: 4,
+  loop: true,
+  spaceBetween: 30,
+});
 
-  export default mySwiper;
+const reviewsSwiper = initSwiper('[data-swiper="reviews-swiper"] [data-swiper="swiper"]', {
+  slidesPerView: 1,
+});
+
+export { jurySwiper, reviewsSwiper };

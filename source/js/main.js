@@ -1,7 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
-import mySwiper from './vendor/init-swiper';
+import {jurySwiper, reviewsSwiper} from './vendor/init-swiper';
 import initTabs from './vendor/init-tabs';
 import initAccordion from './vendor/init-accordion';
 // ---------------------------------
@@ -11,6 +11,8 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
+  jurySwiper();
+  reviewsSwiper();
   // Modules
   // ---------------------------------
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
@@ -19,8 +21,6 @@ window.addEventListener('DOMContentLoaded', () => {
     initModals();
     initTabs();
     initAccordion();
-    // eslint-disable-next-line no-unused-expressions
-    mySwiper;
     const form = new Form();
     window.form = form;
     form.init();

@@ -1,0 +1,24 @@
+.juri-swiper {
+    padding: 120px 130px;
+  }
+  
+
+.juri-slide {
+    flex-shrink: 0;
+    max-width: 260px;
+    height: 294px;
+    position: relative;
+    transition-property: transform;
+  }
+
+  .swiper-name {
+    position: absolute;
+    color: #fff;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    bottom: 26px;
+    left: 55px;
+  }
+  
