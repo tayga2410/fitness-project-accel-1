@@ -19,7 +19,7 @@
 }
 
 @mixin active {
-  &.focus-visible:active {
+  &:active:not(.focus-visible) {
     @content;
   }
 }
@@ -31,7 +31,14 @@
     }
   }
 
-  &.focus-visible:focus {
+  &.focus-visible:focus,
+  &:focus-visible {
+    @content;
+  }
+}
+
+@mixin disabled {
+  &:disabled {
     @content;
   }
 }
@@ -49,7 +56,6 @@
     @content;
   }
 }
-
 
 // Mobile first
 

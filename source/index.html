@@ -38,8 +38,9 @@
     <header class="header">
       <h1 class="visually-hidden">Просторный тренажерный зал площадью 900 кв/м</h1>
       <div class="header__container">
-        <a href="#"><img src="img/main-logo.png" alt="" srcset="img/main-logo@2x.png" width="120" height="26"></a>
-        <a href="tel:8-800-555-55-55">8-800-555-55-55</a>
+        <a class="header__image" href="#"><img src="img/main-logo.png" alt="" srcset="img/main-logo@2x.png" width="120"
+            height="26"></a>
+        <a class="header__telephone" href="tel:8-800-555-55-55">8-800-555-55-55</a>
       </div>
     </header>
     <main>
@@ -53,7 +54,9 @@
               <li>Кардио-зона</li>
             </ul>
             <h2>Фитнес Центр</h2>
-            <button class="intro__button button" type="submit">Купить абонемент</button>
+            <a class="button__link" href="#subscription">
+              <button class="intro__button button" type="submit">Купить абонемент</button>
+            </a>
           </div>
           <picture>
             <source type="image/webp" media="(max-width: 1365px)"
@@ -94,15 +97,14 @@
             </picture>
             <div class="about__iframe-wrapper">
               <iframe width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw?si=Xq4Qrh6BZO2c6v0v"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen loading="lazy"></iframe>
+                title="Бесплатные интерактивные онлайн-курсы." loading="lazy"></iframe>
+                <button class="about__iframe-button button">Окрыть видео</button>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="subscription">
+      <section class="subscription" id="subscription">
         <div class="subscription__container container">
           <h2 class="subscription__title">Абонементы</h2>
           <div class="subscription__tabs">
@@ -679,25 +681,25 @@
             <li class="nav__user-item"><a class="nav__user-link" href="#">Тренеры</a></li>
             <li class="nav__user-item"><a class="nav__user-link" href="#">Расписание</a></li>
           </ul>
-          <ul class="nav__social-list">
-            <li class="nav__socials-item"><a class="nav__socials-link" href="#">
+          <ul class="nav__social-list socials">
+            <li class="socials__item"><a class="socials__link" href="#">
                 <span class="visually-hidden">Vkontakte.</span>
-                <svg class="nav__socials-icon" width="25" height="25">
-                  <use href="img/sprite/vk-logo.svg"></use>
+                <svg class="socials__icon" width="25" height="25">
+                  <use href="img/sprite.svg#vk-logo"></use>
                 </svg>
               </a>
             </li>
-            <li class="nav__socials-item"><a class="nav__socials-link" href="#">
+            <li class="socials__item"><a class="socials__link" href="#">
                 <span class="visually-hidden">Odnoklassniki.</span>
-                <svg class="nav__socials-icon" width="25" height="25">
-                  <use href="img/sprite/ok-logo.svg"></use>
+                <svg class="socials__icon" width="25" height="25">
+                  <use href="img/sprite.svg#ok-logo"></use>
                 </svg>
               </a>
             </li>
-            <li class="nav__socials-item"><a class="nav__socials-link" href="#">
+            <li class="socials__item"><a class="socials__link" href="#">
                 <span class="visually-hidden">Reddit.</span>
-                <svg class="nav__socials-icon" width="25" height="25">
-                  <use href="img/sprite/reddit-logo.svg"></use>
+                <svg class="socials__icon" width="25" height="25">
+                  <use href="img/sprite.svg#reddit-logo"></use>
                 </svg>
               </a>
             </li>

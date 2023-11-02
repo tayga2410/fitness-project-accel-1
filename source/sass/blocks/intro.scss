@@ -75,6 +75,12 @@
   }
 }
 
+.button__link {
+  width: 230px;
+  margin: 0;
+  grid-column: 2 / 3;
+}
+
 .intro__button {
   text-align: center;
   font-family: $ff-placeholder;
@@ -90,9 +96,29 @@
   padding: 27px 54px;
   justify-content: center;
   align-items: center;
-  margin: 0 0 0 42px;
+  margin: 0;
   grid-column: 2 / 3;
   background-color: transparent;
   border: 2px solid $color-default-white;
   color: $color-default-white;
+  cursor: pointer;
+  z-index: 1;
+
+  @include hover-focus {
+    background-color: $color-default-white;
+    color: #103aae;
+  }
+
+  @include active {
+    background-color: $color-default-white;
+    color: #102654;
+  }
+
+  @include disabled {
+    opacity: 0.5;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    cursor: not-allowed;
+    pointer-events: none;
+    outline: none;
+  }
 }

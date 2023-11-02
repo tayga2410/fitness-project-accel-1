@@ -13,13 +13,17 @@
   gap: 40px;
 }
 
-.nav__user-item {
-}
-
 .nav__user-link {
   color: $color-default-white;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
+}
+
+.nav__social-list {
+  display: flex;
+  list-style-type: none;
+  text-decoration: none;
+  gap: 10px;
 }
