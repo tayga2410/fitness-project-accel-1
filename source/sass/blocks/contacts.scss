@@ -1,0 +1,31 @@
+.contacts__header {
+  margin: 0 0 40px 0;
+  font-family: $ff-alumni;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 54px;
+  letter-spacing: 1.62px;
+}
+.contacts__text-wrapper {
+}
+.contacts__list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 120px;
+}
+.contacts__item {
+}
+.contacts__title {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.contacts__description {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; 
+}
