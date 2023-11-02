@@ -96,7 +96,7 @@
               <iframe width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw?si=Xq4Qrh6BZO2c6v0v"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
+                allowfullscreen loading="lazy"></iframe>
             </div>
           </div>
         </div>
@@ -630,34 +630,42 @@
 
     </main>
     <footer>
-      <div class="footer__container container">
+      <div class="footer__container container ">
         <h2 class="visually-hidden">Контактная информация</h2>
-        <form action="https://echo.htmlacademy.ru/" method="post" data-form-validate autocomplete="off">
+        <form class="footer__form" action="https://echo.htmlacademy.ru/" autocomplete="off" data-form-validate>
           <h3>Бесплатное занятие</h3>
-          <input type="text" name="name" required>
-          <input type="tel" name="phone" required data-validate-type="phone">
-          <button type="submit">Отправить</button>
+          <div class="footer__input-wrapper">
+            <label>
+              <input class="footer__form-input" type="text" name="name" required placeholder="Имя">
+              <span>ошибка</span>
+            </label>
+            <label>
+              <input class="footer__form-input" type="tel" name="phone" required placeholder="Номер телефона" data-validate-type="phone">
+              <span>ошибка</span>
+            </label>
+          </div>
+          <button class="footer__form-button button"  type="submit">Отправить</button>
         </form>
-        <div class="footer__contacts">
-          <h3>Контакты</h3>
-          <div class="footer__text-wrapper">
-            <ul>
+        <div class="footer__contacts contacts">
+          <h3 class="contacts__title">Контакты</h3>
+          <div class="contacts__text-wrapper">
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <h4 class="contacts__title">
+                  <p></p>
+                </h4>
+              </li>
+              <li class="footer__contacts-item">
+                <h4>
+                  <p></p>
+                </h4>
+                <li class="footer__contacts-item">
               <li>
                 <h4>
                   <p></p>
                 </h4>
               </li>
-              <li>
-                <h4>
-                  <p></p>
-                </h4>
-              </li>
-              <li>
-                <h4>
-                  <p></p>
-                </h4>
-              </li>
-              <li>
+              <li class="footer__contacts-item">
                 <h4>
                   <p></p>
                 </h4>
