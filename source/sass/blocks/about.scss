@@ -53,7 +53,37 @@
   width: 100px;
   height: 100px;
   border-radius: 50px;
-  background-color:$color-default-white;
-  border: 2px solid #ED0233;
+  background-color: $color-default-white;
+  border: 2px solid #ed0233;
+  position: relative;
 
+  &::before {
+    position: absolute;
+    content: "";
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+    background: linear-gradient(
+      90deg,
+      #1c3477 0%,
+      #1c3477 0.01%,
+      #1a3578 39.11%,
+      #73184b 75.5%,
+      #b4022a 100%
+    );
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-width: 10px 0 10px 15px;
+    border-color: transparent transparent transparent $color-default-white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
