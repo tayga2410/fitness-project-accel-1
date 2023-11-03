@@ -21,6 +21,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initSwiper(reviewsSwiper);
     const form = new Form();
     form.init();
+    window.form = form;
   });
 });
 

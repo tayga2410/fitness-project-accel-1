@@ -634,9 +634,11 @@
 
     </main>
     <footer>
-      <div class="footer__container container ">
+      <div class="footer__container container">
         <h2 class="visually-hidden">Контактная информация</h2>
-        <form class="footer__form" action="https://echo.htmlacademy.ru/" autocomplete="off" data-form-validate>
+        <form class="footer__form" action="https://echo.htmlacademy.ru/" autocomplete="off"
+          data-form-validate="data-form-validate" data-callback="base" data-parent-validate="base"
+          data-message-base="Заполните все данные" data-message-extra="Неверный ввод данных">
           <h3>Бесплатное занятие</h3>
           <div class="footer__input-wrapper">
             <label>
@@ -644,8 +646,10 @@
               <span>ошибка</span>
             </label>
             <label>
-              <input class="footer__form-input" type="tel" name="phone" required placeholder="Номер телефона"
-                data-validate-type="phone">
+              <input class="footer__form-input" type="tel" name="phone" data-validate-type="phone"
+                data-on-input-validate="data-on-input-validate" data-message-base="Поле обязательно к заполнению"
+                data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно"
+                data-required="data-required">
               <span>ошибка</span>
             </label>
           </div>
