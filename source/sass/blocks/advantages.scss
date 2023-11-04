@@ -1,5 +1,5 @@
-.advantages__container {
-  padding: 120px 103px;
+.advantages {
+  padding: 120px 0 0 0;
   h2 {
     font-family: $ff-alumni;
     font-size: 54px;
@@ -10,14 +10,22 @@
     text-align: center;
     margin: 0 0 50px 0;
   }
+}
+.advantages__container {
+  padding: 0px 103px 120px 103px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 60px;
+  width: 1040px;
 
   ul {
-    list-style-type: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    list-style: none;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     flex-wrap: wrap;
+    gap: 138px;
   }
 
   li {
@@ -69,13 +77,21 @@
   }
 }
 
-.advantages__sub-container {
+.advantages__centered-item {
   background-color: #1c3374;
   display: flex;
   flex-direction: column;
   padding: 70px 34px 86px 34px;
   width: 240px;
   height: 340px;
+  grid-column: 2/3;
+  height: 100%;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
 
   span {
     color: $color-default-white;

@@ -2,18 +2,20 @@
   position: relative;
   background: #f8f9fc;
   overflow: hidden;
-  z-index: 2;
+  z-index: 3;
 
   img {
     position: absolute;
     right: 0;
     bottom: -134px;
-    z-index: 1;
+    z-index: 2;
   }
 }
 
 .subscription__container {
   padding: 120px 103px;
+  z-index: 3;
+  position: relative;
 
   h2 {
     font-family: $ff-alumni;
