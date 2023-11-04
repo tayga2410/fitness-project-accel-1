@@ -1,0 +1,97 @@
+.jury-swiper {
+  padding: 0 103px;
+}
+
+.jury-container {
+  max-width: 1160px;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.jury-title {
+  font-family: $ff-alumni;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 54px;
+  letter-spacing: 1.62px;
+  margin: 0 0 46px 0;
+  padding: 0 0 0 103px;
+}
+
+.jury-swiper-name {
+  position: absolute;
+  color: #fff;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  bottom: 26px;
+  left: 55px;
+}
+
+.jury-image-wrapper {
+  width: 260px;
+}
+
+.jury-slide {
+  position: relative;
+  width: 260px;
+}
+
+.jury-slide-overlay {
+  display: flex;
+  flex-direction: column;
+  color: $color-default-white;
+  background-color: rgba(16, 38, 84, 0.89);
+  filter: drop-shadow(0px 0px 35px rgba(42, 59, 99, 0.17));
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  padding: 45px 41px 50px 42px;
+  text-align: center;
+
+  h4 {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    margin: 0 0 8px 0;
+  }
+  span {
+    color: #b6bdcc;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    margin: 0 0 33px 0;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  li {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: start;
+  }
+}
+
+.jury-slide:hover .jury-slide-overlay {
+  display: block;
+}
+.jury-slide:focus .jury-slide-overlay {
+  display: block;
+}
+

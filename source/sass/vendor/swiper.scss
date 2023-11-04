@@ -236,7 +236,7 @@
 }
 .swiper-button-prev:active svg,
 .swiper-button-next:active svg {
-  filter: invert(1); /* Инвертируем цвет иконки, делаем её белой */
+  filter: invert(1); 
 }
 .swiper-button-prev {
   top: 43%;

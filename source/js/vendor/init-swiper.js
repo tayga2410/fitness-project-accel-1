@@ -1,6 +1,6 @@
 import swiper from "./swiper";
 
-const jurySwiper = new swiper('[data-swiper="juri"]', {
+const jurySwiper = new swiper('[data-swiper="jury"]', {
   slidesPerView: 4,
   loop: true,
   spaceBetween: 40,
