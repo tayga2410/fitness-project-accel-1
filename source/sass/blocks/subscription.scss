@@ -1,14 +1,14 @@
 .subscription {
   position: relative;
   background: #f8f9fc;
-  overflow:hidden;
-  z-index: 1;
+  overflow: hidden;
+  z-index: 2;
 
   img {
     position: absolute;
     right: 0;
     bottom: -134px;
-    z-index: -1;
+    z-index: 1;
   }
 }
 
@@ -57,20 +57,35 @@
   background-color: transparent;
   color: rgba(16, 38, 84, 0.5);
   cursor: pointer;
+  position: relative;
 
-  &--is-selected {
+  @include hover-focus {
     color: #102654;
-    position: relative;
+  }
 
-    &::after {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 2px;
-      background-color: #d10a42;
-      bottom: -14px;
-      left: 0;
-    }
+  @include active {
+    color: #103654;
+  }
+
+  @include disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    pointer-events: none;
+    outline: none;
+  }
+}
+
+.subscription__tabs-control:hover,
+.subscription__tabs-control:focus,
+.subscription__tabs-control:active {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #d10a42;
+    bottom: -14px;
+    left: 0;
   }
 }
 
@@ -101,10 +116,6 @@
           rgba(0, 53, 159, 1)
         )
         1;
-    }
-
-    @include focus {
-      border: red;
     }
   }
 

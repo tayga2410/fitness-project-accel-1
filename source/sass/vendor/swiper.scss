@@ -40,7 +40,6 @@
   display: flex;
   transition-property: transform;
   box-sizing: content-box;
-  margin-left: 56px;
 }
 .swiper-android .swiper-slide,
 .swiper-wrapper {
@@ -244,13 +243,13 @@
 }
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next {
-  left: 0;
+  left: -40px;
   right: auto;
 }
 
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev {
-  right: 0;
+  right: -40px;
   left: auto;
 }
 

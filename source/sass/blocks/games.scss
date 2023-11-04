@@ -1,5 +1,10 @@
+.games {
+  z-index: -1;
+}
+
 .games__container {
   padding: 120px 103px;
+  z-index: -1;
 }
 
 .games__wrapper {
@@ -96,6 +101,9 @@
 }
 .games__button {
   grid-column: span 2;
+  padding: 27px 56px;
+  width: 340px;
+  height: 66px;
   text-align: center;
   font-size: 12px;
   font-style: normal;
