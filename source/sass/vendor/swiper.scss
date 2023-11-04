@@ -207,15 +207,50 @@
     --swiper-navigation-color: var(--swiper-theme-color);
     */
 }
+
 .swiper-button-prev,
 .swiper-button-next {
   position: absolute;
-  top: 50%;
-  width: 16px;
-  height: 32px;
+  width: 56px;
+  height: 56px;
   z-index: 11;
+  background-color: transparent;
+  color: red;
+
+  @include hover-focus {
+    border: 1px solid #102654;
+    border-radius: 50%;
+  }
+
+  @include active {
+    background-color: #102654;
+    border-radius: 50%;
+  }
+
+  @include disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    pointer-events: none;
+    outline: none;
+  }
+}
+.swiper-button-prev:active svg,
+.swiper-button-next:active svg {
+  filter: invert(1); /* Инвертируем цвет иконки, делаем её белой */
+}
+.swiper-button-prev {
+  top: 43%;
+  left: -72px;
 }
 
+.swiper-button-next {
+  top: 43%;
+  rotate: (180deg);
+}
+
+.swiper-button-prev:active svg path {
+ stroke: $color-default-white;
+}
 .swiper-button-prev.swiper-button-disabled,
 .swiper-button-next.swiper-button-disabled {
   opacity: 0.35;
@@ -243,13 +278,13 @@
 }
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next {
-  left: -40px;
+  left: -57px;
   right: auto;
 }
 
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev {
-  right: -40px;
+  right: -57px;
   left: auto;
 }
 

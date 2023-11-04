@@ -1,20 +1,13 @@
 .intro {
   color: $color-default-white;
+  background: linear-gradient(90deg, #1C3477 0%, #1C3477 0.01%, #1A3578 39.11%, #73184B 75.5%, #B4022A 100%);
 }
 
 .intro__container {
   display: flex;
+  width: 955px;
   gap: 70px;
-  background: linear-gradient(
-    90deg,
-    #1c3477 0%,
-    #1c3477 0.01%,
-    #1a3578 39.11%,
-    #73184b 75.5%,
-    #b4022a 100%
-  );
-
-  padding: 0 0 120px 103px;
+  padding: 0 0 120px 0;
 
   img {
     background: rgba(20, 54, 122, 0.5);
