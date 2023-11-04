@@ -47,16 +47,51 @@
   position: absolute;
   top: 70%;
   right: 54%;
+  width: 364px;
+  height: 228px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(20, 54, 122, 0.5);
+    z-index: 3;
+  }
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
 }
 
 .about__iframe-button {
   width: 100px;
   height: 100px;
   border-radius: 50px;
-  background-color: $color-default-white;
+  background-color: transparent;
   border: 2px solid #ed0233;
   position: relative;
   cursor: pointer;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
 
   @include hover-focus {
     border: 2px solid #102654;
@@ -79,6 +114,7 @@
     width: 75px;
     height: 75px;
     border-radius: 36px;
+    z-index: 5;
     background: linear-gradient(
       90deg,
       #1c3477 0%,
@@ -90,7 +126,12 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    @include hover-focus {
+      background: red;
+    }
   }
+
   &::after {
     content: "";
     position: absolute;
@@ -100,5 +141,39 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 6;
   }
+}
+
+.about__iframe-button:hover::before,
+.about__iframe-button:focus::before {
+  background: $color-default-white;
+}
+
+.about__iframe-button:active::before {
+  width: 50px;
+  height: 50px;
+  border-radius: 36px;
+  background: $color-default-white;
+}
+
+.about__iframe-button:disabled::before {
+  background-color: transparent;
+  cursor: not-allowed;
+  pointer-events: none;
+  outline: none;
+}
+
+.about__iframe-button:hover::after,
+.about__iframe-button:focus::after,
+.about__iframe-button:active::after {
+  border-color: transparent transparent transparent #102654;
+}
+
+.about__iframe-button:disabled::after {
+  border-color: transparent transparent transparent #102654;
+  opacity: 0.4;
+  cursor: not-allowed;
+  pointer-events: none;
+  outline: none;
 }

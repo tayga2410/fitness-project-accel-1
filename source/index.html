@@ -96,11 +96,24 @@
                 alt="">
             </picture>
             <div class="about__iframe-wrapper">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/video-overlay-mobile.webp 1x, img/video-overlay-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/video-overlay-mobile.png 1x, img/video-overlay-mobile@2x.png 2x">
+                <source type="image/webp" media="(max-width: 1365px)"
+                  srcset="img/video-overlay-tablet.webp 1x, img/video-overlay-tablet@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1365px)"
+                  srcset="img/video-overlay-tablet.png 1x, img/video-overlay-tablet@2x.png 2x">
+                <img src="img/video-overlay-desktop.png" alt=""
+                  srcset="img/video-overlay-desktop@2x.png 2x" width="364" height="228">
+              </picture>
               <iframe width="364" height="228"
                 src="https://www.youtube.com/embed/9TZXsZItgdw?si=Xq4Qrh6BZO2c6v0v&controls=0"
                 title="Бесплатные интерактивные онлайн-курсы." loading="lazy">
               </iframe>
-              <button class="about__iframe-button button">Окрыть видео</button>
+              <button class="about__iframe-button button">
+              </button>
             </div>
           </div>
         </div>
