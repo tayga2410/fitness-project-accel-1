@@ -19,7 +19,7 @@
 }
 
 @mixin active {
-  &:active:not(.focus-visible) {
+  &.focus-visible:active {
     @content;
   }
 }
@@ -31,14 +31,7 @@
     }
   }
 
-  &.focus-visible:focus,
-  &:focus-visible {
-    @content;
-  }
-}
-
-@mixin disabled {
-  &:disabled {
+  &.focus-visible:focus {
     @content;
   }
 }

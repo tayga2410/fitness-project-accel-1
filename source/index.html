@@ -54,7 +54,7 @@
               <li>Кардио-зона</li>
             </ul>
             <h2>Фитнес Центр</h2>
-            <a class="button__link" href="#subscription">
+            <a class="intro__button-link" href="#subscription">
               <button class="intro__button button" type="submit">Купить абонемент</button>
             </a>
           </div>
@@ -105,8 +105,8 @@
                   srcset="img/video-overlay-tablet.webp 1x, img/video-overlay-tablet@2x.webp 2x">
                 <source type="image/webp" media="(max-width: 1365px)"
                   srcset="img/video-overlay-tablet.png 1x, img/video-overlay-tablet@2x.png 2x">
-                <img src="img/video-overlay-desktop.png" alt=""
-                  srcset="img/video-overlay-desktop@2x.png 2x" width="364" height="228">
+                <img src="img/video-overlay-desktop.png" alt="" srcset="img/video-overlay-desktop@2x.png 2x" width="364"
+                  height="228">
               </picture>
               <iframe width="364" height="228"
                 src="https://www.youtube.com/embed/9TZXsZItgdw?si=Xq4Qrh6BZO2c6v0v&controls=0"
@@ -124,7 +124,8 @@
           <h2 class="subscription__title">Абонементы</h2>
           <div class="subscription__tabs">
             <div class="subscription__tabs-controls" data-tabs="controls">
-              <button class="subscription__tabs-control button" type="button">1 месяц</button>
+              <button class="subscription__tabs-control subscription__tabs-control--is-selected button" type="button">1
+                месяц</button>
               <button class="subscription__tabs-control button" type="button">6 месяцев</button>
               <button class="subscription__tabs-control button" type="button">12 месяцев</button>
             </div>
@@ -132,34 +133,41 @@
               <li>
                 <h4>С тренером</h4>
                 <p>12 занятий</p>
-                <div class="subscription__price-wrapper">
-                  <span>5000</span>
-                  <span>5000</span>
-                </div>
+                <span data-content="5000">5000
+                  <svg width="30" height="42">
+                    <use href="img/sprite.svg#rouble-icon"></use>
+                  </svg>
+                </span>
                 <button class="subscription__button button" type="button">Купить абонемент</button>
               </li>
-              <li class="is-selected">
+              <li>
                 <h4>Дневной</h4>
                 <p>с 8:00 до 17:00</p>
-                <div class="subscription__price-wrapper">
-                  <span>1700</span>
-                  <span>1700</span>
-                </div>
-                <button class="subscription__button subscription__button--is-selected button" type="button">Купить
+                <span data-content="1700">1700 <svg width="30" height="42">
+                    <use href="img/sprite.svg#rouble-icon"></use>
+                  </svg></span>
+                <button class="subscription__button button" type="button">Купить
                   абонемент</button>
               </li>
               <li>
                 <h4>Полный день</h4>
                 <p>с 8:00 до 22:00 </p>
-                <div class="subscription__price-wrapper">
-                  <span>2700</span>
-                  <span>2700</span>
-                </div>
+                <span data-content="2700">2700 <svg width="30" height="42">
+                    <use href="img/sprite.svg#rouble-icon"></use>
+                  </svg></span>
                 <button class="subscription__button button" type="button">Купить абонемент</button>
               </li>
             </ul>
           </div>
         </div>
+        <picture>
+          <source type="image/webp" media="(max-width: 1365px)"
+            srcset="img/weights-tablet.webp 1x, img/weights-tablet@2x.webp 2x">
+          <source type="image/webp" media="(max-width: 1365px)"
+            srcset="img/weights-tablet.png 1x, img/weights-tablet@2x.png 2x">
+          <img src="img/weights-desktop.png" alt="" srcset="img/weights-desktop@2x.png 2x" width="275"
+            height="328">
+        </picture>
       </section>
       <section class="games">
         <div class="games__container container">
