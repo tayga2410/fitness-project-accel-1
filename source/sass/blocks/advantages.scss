@@ -13,24 +13,25 @@
 }
 .advantages__container {
   padding: 0px 103px 120px 103px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 60px;
-  width: 1040px;
 
   ul {
     margin: 0;
     padding: 0;
     list-style: none;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 138px;
+    display: grid;
+    gap: 116px 60px;
+    grid-template-columns: 32.7% 23.1% 32.7%;
+    
   }
 
-  li {
+  li  {
     display: flex;
     align-items: center;
+  }
+
+  li[data-element="center"] {
+    grid-column: 2/3;
+    grid-row: 1/3;
   }
 }
 

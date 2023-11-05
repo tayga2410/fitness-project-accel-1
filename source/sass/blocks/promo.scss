@@ -20,12 +20,20 @@
 .promo__wrapper {
   display: flex;
   flex-shrink: 0;
+
+  img {
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 .promo__text-wrapper {
   color: $color-default-white;
   background-color: #ed0233;
   padding: 40px 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   h4 {
     font-size: 26px;
@@ -63,18 +71,35 @@
   letter-spacing: 0.7px;
   text-transform: uppercase;
   position: relative;
-  width: 79px;
-  text-align: start;
-  padding: 0;
+  width: 99px;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
 
   &::after {
     content: "";
     position: absolute;
-    width: 100%;
+    width: 79px;
     height: 1px;
     background-color: $color-default-white;
-    bottom: -5px;
-    left: 0;
+    bottom: 5px;
+    left: 10px;
+  }
+
+  @include hover {
+    opacity: 0.8;
+  }
+
+  @include focus {
+   outline: 1px solid $color-default-white;
+  }
+
+  @include disabled {
+    opacity: 0.5;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    cursor: not-allowed;
+    pointer-events: none;
+    outline: none;
   }
 
   &--white {
@@ -83,20 +108,13 @@
 
   &--dark {
     color: #1c3374;
-    padding: 0 0 0 35px;
-    margin: 0 0 23px 0;
-
-    &::after {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 1px;
-      background-color: #1c3374;
-      bottom: -5px;
-      left: 35px;
-    }
   }
 }
+
+.promo__button:focus::after {
+  display: none;
+}
+
 
 .promo__offer-wrapper {
   display: flex;
@@ -107,6 +125,9 @@
 }
 
 .promo__offer {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 35px 35px 35px;
   border: 7px solid;
   border-image: linear-gradient(
       to right,
@@ -120,7 +141,6 @@
     font-style: normal;
     font-weight: 700;
     line-height: 26px;
-    padding: 30px 0 0 35px;
     margin: 0 0 10px 0;
   }
 
@@ -130,6 +150,5 @@
     font-weight: 300;
     line-height: 24px;
     margin: 0 0 67px 0;
-    padding: 0 0 0 35px;
   }
 }
