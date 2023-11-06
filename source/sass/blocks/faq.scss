@@ -131,6 +131,7 @@
   cursor: pointer;
   font-size: 0;
   position: relative;
+  z-index: 0;
 
   @include hover-focus {
     background-color: #1c3374;
@@ -164,44 +165,24 @@
   transform: translate(-50%, -50%);
 }
 
-.faq__button:hover::before,
-.faq__button:hover::after {
-  background-color: $color-default-white;
+.faq__button.is-opened {
+  background-color: #1c3374;
 }
 
+.faq__button:hover::before,
+.faq__button:hover::after,
 .faq__button:focus::before,
 .faq__button:focus::after {
   background-color: $color-default-white;
 }
-
-.faq__button:disabled::before,
-.faq__button:disabled::after {
-  background-color: #1c3374;
-  opacity: 0.3;
-  cursor: not-allowed;
-  pointer-events: none;
-  outline: none;
-}
-
 .faq__button.is-opened::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 40px;
-  height: 40px;
-  border-radius: 20px;
-  background-color: #1c3374;
-  transform: translate(-50%, -50%);
+  background-color: $color-default-white;
 }
 
 .faq__button.is-opened::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 20px;
-  height: 1px;
+  display: none;
+}
+
+.faq__button.is-closed {
   background-color: $color-default-white;
-  transform: translate(-50%, -50%);
 }

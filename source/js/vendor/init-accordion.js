@@ -11,12 +11,10 @@ function initAccordion() {
 
   tabControls.forEach((control) => {
     control.addEventListener("click", () => {
-      // Удаление класса "--is-selected" у всех табов
       tabControls.forEach((c) => {
         c.classList.remove("faq__tab-control--is-selected");
       });
 
-      // Добавление класса "--is-selected" только к выбранному табу
       control.classList.add("faq__tab-control--is-selected");
 
       const target = control.getAttribute("data-target");
@@ -36,8 +34,18 @@ function initAccordion() {
     button.addEventListener("click", () => {
       const content = button.nextElementSibling;
 
-      button.classList.toggle("is-opened");
-      content.style.display = button.classList.contains("is-opened") ? "block" : "none";
+      if (button.classList.contains("is-opened")) {
+        button.classList.remove("is-opened");
+        button.classList.add("is-closed");
+        content.style.display = "none";
+      } else if (button.classList.contains("is-closed")) {
+        button.classList.remove("is-closed");
+        content.style.display = "block";
+        button.classList.add("is-opened");
+      } else {
+        button.classList.add("is-opened");
+        content.style.display = "block";
+      }
     });
   });
 }
