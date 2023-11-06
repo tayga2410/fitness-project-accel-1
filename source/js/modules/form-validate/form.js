@@ -91,8 +91,18 @@ export class Form {
     form.noValidate = true;
 
     form.addEventListener('submit', (event) => {
-      event.preventDefault();
-      this._onFormSubmit(event, callback);
+      if (this.validateForm(event.target)) {
+        if (this.isNameAndPhoneValid(event.target)) {
+          this._onFormSubmit(event, callback);
+        } else {
+          // Если условия не выполнены, предотвратить отправку формы
+          event.preventDefault();
+          // Здесь можно показать пользователю сообщение об ошибке или совершить другие действия
+        }
+      } else {
+        event.preventDefault();
+        // Если вся форма не прошла валидацию, предотвратить отправку и предпринять необходимые действия
+      }
     });
 
     form.addEventListener('input', (event) => {
@@ -104,6 +114,12 @@ export class Form {
     });
   }
 
+  isNameAndPhoneValid(form) {
+    const nameInput = form.querySelector('[name="name"]');
+    const phoneInput = form.querySelector('[name="phone"]');
+    return nameInput.value.trim() !== '' && phoneInput.value.trim() !== '';
+  }
+
   init() {
     this._validateParent = document.querySelectorAll('[data-form-validate="data-form-validate"]');
     if (!this._validateParent.length) {
@@ -112,3 +128,5 @@ export class Form {
     this._validateParent.forEach((parent) => this._initValidate(parent));
   }
 }
+
+
