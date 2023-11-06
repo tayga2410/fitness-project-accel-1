@@ -1,6 +1,5 @@
-.reviews-container {
-  padding: 120px 347px;
-
+.reviews-swiper {
+  padding: 120px 103px 121px 103px;
   h2 {
     font-family: $ff-alumni;
     font-size: 54px;
@@ -11,6 +10,12 @@
     margin: 0 0 46px 0;
     text-align: center;
   }
+}
+
+.reviews-container {
+  max-width: 560px;
+  position: relative;
+  padding: 0;
 }
 
 .reviews-slide {

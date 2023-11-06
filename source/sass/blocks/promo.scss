@@ -70,6 +70,7 @@
   line-height: 14px; /* 100% */
   letter-spacing: 0.7px;
   text-transform: uppercase;
+  color: $color-default-white;
   position: relative;
   width: 99px;
   border: none;
@@ -101,18 +102,33 @@
     pointer-events: none;
     outline: none;
   }
-
-  &--white {
-    color: $color-default-white;
-  }
-
-  &--dark {
-    color: #1c3374;
-  }
+ 
 }
 
 .promo__button:focus::after {
   display: none;
+}
+
+.promo__button:active::after {
+  display: block;
+}
+
+.promo__button--dark {
+  color: #1c3374;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 79px;
+    height: 1px;
+    background-color: #1c3374;
+    bottom: 5px;
+    left: 10px;
+  }
+
+  @include focus {
+    outline: 1px solid #1c3374;
+   }
 }
 
 
