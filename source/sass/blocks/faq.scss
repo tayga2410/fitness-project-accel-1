@@ -57,7 +57,17 @@
 }
 
 .faq__accordion-wrapper {
+  opacity: 0;
+  transition: opacity 1s ease;
   width: 860px;
+  visibility: 0;
+
+  &.is-active {
+    opacity: 1;
+    display: block;
+    visibility: 1;
+  }
+
   ul {
     list-style-type: none;
     padding: 25px 0;
@@ -84,6 +94,7 @@
     flex-wrap: wrap;
     width: 860px;
     position: relative;
+    cursor: pointer;
 
     &::after {
       content: "";
@@ -114,7 +125,7 @@
     width: 660px;
   }
 
-  p[data-target="is-opened"] {
+  p[data-taget="is-opened"] {
     display: block;
   }
 }
