@@ -13,7 +13,7 @@ function initAccordion() {
       const content = firstAccordionItem.querySelector("p");
       firstAccordionItem.classList.add("is-opened");
       content.style.maxHeight = content.scrollHeight + "px";
-    }
+    } 
   };
 
   openFirstAccordion();
@@ -46,7 +46,6 @@ function initAccordion() {
   accordionItems.forEach((item) => {
     const button = item.querySelector(".faq__button");
     const content = item.querySelector("p");
-    const accItem = item.closest("li");
 
     item.addEventListener("click", (event) => {
       const isOpened = item.classList.contains("is-opened");
@@ -60,6 +59,7 @@ function initAccordion() {
         item.classList.remove("is-opened");
         button.classList.remove("is-opened");
         button.classList.add("is-closed");
+        content.style.maxHeight = null;
       }
     });
   });
