@@ -7,7 +7,9 @@
   display: flex;
   width: 955px;
   gap: 70px;
-  padding: 0 0 120px 0;
+  padding: 0 0 120px 103px;
+  margin: 0;
+  width: 100%;
 
   img {
     background: rgba(20, 54, 122, 0.5);
@@ -16,7 +18,7 @@
 
 .intro__text-wrapper {
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 113px 270px;
   width: 385px;
   height: 400px;
   padding: 62px 0 0 0;
@@ -24,6 +26,7 @@
   ul {
     margin: 0;
     padding: 0;
+    width: 113px;
     list-style-type: none;
     display: flex;
     justify-content: center;
@@ -72,6 +75,7 @@
   width: 230px;
   margin: 0;
   grid-column: 2 / 3;
+ margin: 0 0 0 41px;
 }
 
 .intro__button {
@@ -85,14 +89,14 @@
   text-transform: uppercase;
   display: flex;
   width: 230px;
-  height: 56px;
-  padding: 27px 54px;
+  height: 66px;
+  padding: 27px 56px;
   justify-content: center;
   align-items: center;
   margin: 0;
   grid-column: 2 / 3;
   background-color: transparent;
-  border: 2px solid $color-default-white;
+  outline: 2px solid $color-default-white;
   color: $color-default-white;
   cursor: pointer;
   z-index: 1;

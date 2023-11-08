@@ -156,9 +156,9 @@
                 <p>с 8:00 до 22:00 </p>
                 <span data-content="2700">2700 <svg width="30" height="42">
                     <use href="img/sprite.svg#rouble-icon"></use>
-                  </svg></span>  <a href="#" class="subscription__button button">
-                    Купить абонемент
-                  </a>
+                  </svg></span> <a href="#" class="subscription__button button">
+                  Купить абонемент
+                </a>
               </li>
             </ul>
           </div>
@@ -174,16 +174,18 @@
       <section class="games">
         <div class="games__container container">
           <div class="games__wrapper">
-            <div class="games__text-wrapper">
-              <h2 class="games__title">Super Games</h2>
-              <div class="games__information">
-                <span class="games__small-title">Дата</span>
-                <span class="games__count">7</span>
-                <span class="games__text">Марта 2019</span>
-              </div>
-              <div class="games__information">
-                <span class="games__small-title games__small-title--divider">Время</span>
-                <span class="games__count">12:00</span>
+            <div class="games__content-container">
+              <div class="games__text-wrapper">
+                <h2 class="games__title">Super Games</h2>
+                <div class="games__information">
+                  <span class="games__small-title">Дата</span>
+                  <span class="games__count">7</span>
+                  <span class="games__text">Марта 2019</span>
+                </div>
+                <div class="games__information">
+                  <span class="games__small-title games__small-title--divider">Время</span>
+                  <span class="games__count">12:00</span>
+                </div>
               </div>
               <p class="games__description">Ежегодные соревнования по CrossFit</p>
               <a class="games__button button" href="#">заполнить заявку</a>
@@ -525,124 +527,129 @@
             </div>
           </div>
           <div class="faq__accordion-container">
-          <div class="faq__accordion-wrapper is-active" data-target="center">
-            <ul>
-              <li data-target="accordion" tabindex="0">
-                <h5>Как стать членом фитнес-центра?</h5>
-                <button class="faq__button button is-opened">Открытая информацию</button>
-                <p data-target="is-opened">При первом посещении и покупке абонемента, необходимо заполнить анкету и
-                  подписать договор. При
-                  покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.</p>
-              </li>
-              <li data-target="accordion"  tabindex="0">
-                <h5>Где можно посмотреть расписание?</h5>
-                <button class="faq__button button">Закрытая Информация</button>
-                <p>Вы всегда можете посмотреть на сайте в разделе "раписание", а так же уточнить по номеру
-                  8-800-555-55-55
-                </p>
-              </li>
-              <li data-target="accordion"  tabindex="0">
-                <h5>Есть кулеры в центре? Предоставляются полотенца?</h5>
-                <button class="faq__button button">Закрытая Информация</button>
-                <p>Кулеры расположены в разных концах зала для удобства наших клиентов, так же выдаются чистые
-                  полотенца, прошедшие термообработку</p>
-              </li>
-              <li data-target="accordion"  tabindex="0">
-                <h5>Сколько тренеров работает в клубе и какова их квалификация?</h5>
-                <button class="faq__button button">Закрытая Информация</button>
-                <p>в нашем клубе работает 8 тренеров, из которых 7 мастеров спорта и 1 победительница чемпионата мира по
-                  легкой атлетике</p>
-              </li>
-            </ul>
+            <div class="faq__accordion-wrapper is-active" data-target="center">
+              <ul>
+                <li data-target="accordion">
+                  <h5>Как стать членом фитнес-центра?</h5>
+                  <button class="faq__button button is-opened">Открытая информацию</button>
+                  <p data-target="is-opened">При первом посещении и покупке абонемента, необходимо заполнить анкету и
+                    подписать договор. При
+                    покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.</p>
+                </li>
+                <li data-target="accordion">
+                  <h5>Где можно посмотреть расписание?</h5>
+                  <button class="faq__button button">Закрытая Информация</button>
+                  <p>Вы всегда можете посмотреть на сайте в разделе "раписание", а так же уточнить по номеру
+                    8-800-555-55-55
+                  </p>
+                </li>
+                <li data-target="accordion">
+                  <h5>Есть кулеры в центре? Предоставляются полотенца?</h5>
+                  <button class="faq__button button">Закрытая Информация</button>
+                  <p>Кулеры расположены в разных концах зала для удобства наших клиентов, так же выдаются чистые
+                    полотенца, прошедшие термообработку</p>
+                </li>
+                <li data-target="accordion">
+                  <h5>Сколько тренеров работает в клубе и какова их квалификация?</h5>
+                  <button class="faq__button button">Закрытая Информация</button>
+                  <p>в нашем клубе работает 8 тренеров, из которых 7 мастеров спорта и 1 победительница чемпионата мира
+                    по
+                    легкой атлетике</p>
+                </li>
+              </ul>
 
+            </div>
+            <div class="faq__accordion-wrapper" data-target="subscription">
+              <ul>
+                <li data-target="accordion">
+                  <h5>Занятия с тренером входят в абонемент?</h5>
+                  <button class="faq__button button">Открытая информация</button>
+                  <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда
+                    присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по
+                    тренажеру или технике выполнения упражнения..</p>
+                </li>
+                <li data-target="accordion">
+                  <h5>Можно ли заморозить абонемент?</h5>
+                  <button class="faq__button button">Закрытая Информация</button>
+                  <p>Заморозьте абонемент в 1 клик на сайте omsk-supergym.ru или позвоните нам по телефону
+                    8-800-555-55-55
+                  </p>
+                </li>
+                <li data-target="accordion">
+                  <h5>Есть ли лимит по посещениям тренажерного зала и групповых занятий?</h5>
+                  <button class="faq__button button">Закрытая Информация</button>
+                  <p>Приобретая наш безлимитный пакет, Вы можете посещать зал в любое время!</p>
+                </li>
+                <li data-target="accordion">
+                  <h5>Что такое семейный доступ и доступ для друзей?</h5>
+                  <button class="faq__button button">Закрытая Информация</button>
+                  <p>Члены семьи могут воспользоваться Вашим абонементом без ограничений, а так же действует акция
+                    "приведи друга". подробней по телефону</p>
+                </li>
+              </ul>
+            </div>
+            <div class="faq__accordion-wrapper" data-target="services">
+              <ul>
+                <li data-target="accordion">
+                  <h5>Предлагает ли клуб услуги
+                    по консультированию
+                    по вопросам питания?</h5>
+                  <button class="faq__button button">Открытая информация</button>
+                  <p>Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши
+                    данные, цели и предложит программу питания.</p>
+                </li>
+                <li data-target="accordion">
+                  <h5>Проводятся ли в клубе какие-либо мероприятия или соревнования?</h5>
+                  <button class="faq__button button">Закрытая Информация</button>
+                  <p>Соревнования и мероприятия проводятся 1 раз в 2 месяца.
+                  </p>
+                </li>
+                <li data-target="accordion">
+                  <h5>Можно ли приобрести в центре спортивное питание?</h5>
+                  <button class="faq__button button">Закрытая Информация</button>
+                  <p>Для Вашего удобства работает точка спортивного питания при входе в центр.</p>
+                </li>
+                <li data-target="accordion">
+                  <h5>Есть ли в центре детская комната?</h5>
+                  <button class="faq__button button">Закрытая Информация</button>
+                  <p>Для досуга Ваших деток мы специально оборудовали не комнату, а целый зал для детских развлечений.
+                    Все
+                    безопасно! убедитесь сами.</p>
+                </li>
+              </ul>
+            </div>
+            <div class="faq__accordion-wrapper" data-target="rules">
+              <ul>
+                <li data-target="accordion">
+                  <h5>Есть в фитнес-центре дресс-код?</h5>
+                  <button class="faq__button button">Открытая информация</button>
+                  <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду.
+                    Верхняя
+                    и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты,
+                    кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках
+                    и
+                    т. п., исключения составляют специальные классы (например, йога, пилатес). </p>
+                </li>
+                <li data-target="accordion">
+                  <h5>Можно ли приводить с собой детей на тренировки?</h5>
+                  <button class="faq__button button">Закрытая Информация</button>
+                  <p>Ваши дети могут провести время в специально оборудованном детском зале
+                  </p>
+                </li>
+                <li data-target="accordion">
+                  <h5>Какие дополнительные правила посещения центра?</h5>
+                  <button class="faq__button button">Закрытая Информация</button>
+                  <p>Посещение зала в наркотическом и алкогольном опьянении строго запрещены.</p>
+                </li>
+                <li data-target="accordion">
+                  <h5>Нужна ли медицинская справка для посещения залов и бассейна?</h5>
+                  <button class="faq__button button">Закрытая Информация</button>
+                  <p>Справка 084 о состоянии здоровья нужна непосредственно для поддержания здоровой атмосферы в нашем
+                    зале</p>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="faq__accordion-wrapper" data-target="subscription">
-            <ul>
-              <li data-target="accordion"  tabindex="0">
-                <h5>Занятия с тренером входят в абонемент?</h5>
-                <button class="faq__button button">Открытая информация</button>
-                <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда
-                  присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по
-                  тренажеру или технике выполнения упражнения..</p>
-              </li>
-              <li data-target="accordion"  tabindex="0">
-                <h5>Можно ли заморозить абонемент?</h5>
-                <button class="faq__button button">Закрытая Информация</button>
-                <p>Заморозьте абонемент в 1 клик на сайте omsk-supergym.ru или позвоните нам по телефону 8-800-555-55-55
-                </p>
-              </li>
-              <li data-target="accordion"  tabindex="0">
-                <h5>Есть ли лимит по посещениям тренажерного зала и групповых занятий?</h5>
-                <button class="faq__button button">Закрытая Информация</button>
-                <p>Приобретая наш безлимитный пакет, Вы можете посещать зал в любое время!</p>
-              </li>
-              <li data-target="accordion"  tabindex="0">
-                <h5>Что такое семейный доступ и доступ для друзей?</h5>
-                <button class="faq__button button">Закрытая Информация</button>
-                <p>Члены семьи могут воспользоваться Вашим абонементом без ограничений, а так же действует акция
-                  "приведи друга". подробней по телефону</p>
-              </li>
-            </ul>
-          </div>
-          <div class="faq__accordion-wrapper" data-target="services">
-            <ul>
-              <li data-target="accordion"  tabindex="0">
-                <h5>Предлагает ли клуб услуги
-                  по консультированию
-                  по вопросам питания?</h5>
-                <button class="faq__button button">Открытая информация</button>
-                <p>Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши
-                  данные, цели и предложит программу питания.</p>
-              </li>
-              <li data-target="accordion"  tabindex="0">
-                <h5>Проводятся ли в клубе какие-либо мероприятия или соревнования?</h5>
-                <button class="faq__button button">Закрытая Информация</button>
-                <p>Соревнования и мероприятия проводятся 1 раз в 2 месяца.
-                </p>
-              </li>
-              <li data-target="accordion"  tabindex="0">
-                <h5>Можно ли приобрести в центре спортивное питание?</h5>
-                <button class="faq__button button">Закрытая Информация</button>
-                <p>Для Вашего удобства работает точка спортивного питания при входе в центр.</p>
-              </li>
-              <li data-target="accordion"  tabindex="0">
-                <h5>Есть ли в центре детская комната?</h5>
-                <button class="faq__button button">Закрытая Информация</button>
-                <p>Для досуга Ваших деток мы специально оборудовали не комнату, а целый зал для детских развлечений. Все
-                  безопасно! убедитесь сами.</p>
-              </li>
-            </ul>
-          </div>
-          <div class="faq__accordion-wrapper" data-target="rules">
-            <ul>
-              <li data-target="accordion"  tabindex="0">
-                <h5>Есть в фитнес-центре дресс-код?</h5>
-                <button class="faq__button button">Открытая информация</button>
-                <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя
-                  и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты,
-                  кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и
-                  т. п., исключения составляют специальные классы (например, йога, пилатес). </p>
-              </li>
-              <li data-target="accordion"  tabindex="0">
-                <h5>Можно ли приводить с собой детей на тренировки?</h5>
-                <button class="faq__button button">Закрытая Информация</button>
-                <p>Ваши дети могут провести время в специально оборудованном детском зале
-                </p>
-              </li>
-              <li data-target="accordion"  tabindex="0">
-                <h5>Какие дополнительные правила посещения центра?</h5>
-                <button class="faq__button button">Закрытая Информация</button>
-                <p>Посещение зала в наркотическом и алкогольном опьянении строго запрещены.</p>
-              </li>
-              <li data-target="accordion"  tabindex="0">
-                <h5>Нужна ли медицинская справка для посещения залов и бассейна?</h5>
-                <button class="faq__button button">Закрытая Информация</button>
-                <p>Справка 084 о состоянии здоровья нужна непосредственно для поддержания здоровой атмосферы в нашем
-                  зале</p>
-              </li>
-            </ul>
-          </div>
-        </div>
         </div>
       </section>
 
@@ -708,19 +715,19 @@
           <form action="https://echo.htmlacademy.ru/" autocomplete="off" method="post">
             <h3 class="footer__header">Бесплатное занятие</h3>
             <div class="form-container__input-container">
-              <div class="form-container__input-wrapper" placeholder="Имя" data-validate-type="text"
-                data-limitation="name" data-message-base="Поле обязательно к заполнению"
-                data-message-extra="Проверьте корректность заполнения поля" data-required="data-required" required>
+              <div class="form-container__input" placeholder="Имя" data-validate-type="text" data-limitation="name"
+                data-message-base="Заполнение обязательно" data-message-extra="Некорректное заполнение"
+                data-required="data-required" required>
                 <label>
-                  <input class="form-container__input" type="text" name="name" placeholder="Имя">
+                  <input type="text" name="name" placeholder="Имя">
                 </label>
               </div>
-              <div class="form-container__input-wrapper" data-validate-type="phone"
-                data-on-input-validate="data-on-input-validate" data-message-base="Поле обязательно к заполнению"
-                data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно"
+              <div class="form-container__input" data-validate-type="phone"
+                data-on-input-validate="data-on-input-validate" data-message-base="Заполнение обязательно"
+                data-message-extra="Некорректное заполнение" data-message-success="Поле заполнено верно"
                 data-required="data-required">
                 <label>
-                  <input class="form-container__input" type="tel" name="phone">
+                  <input type="tel" name="phone">
                 </label>
               </div>
             </div>
@@ -762,21 +769,21 @@
           <ul class="nav__social-list socials">
             <li class="socials__item"><a class="socials__link" href="#">
                 <span class="visually-hidden">Vkontakte.</span>
-                <svg class="socials__icon" width="25" height="25">
+                <svg width="25" height="25">
                   <use href="img/sprite.svg#vk-logo"></use>
                 </svg>
               </a>
             </li>
             <li class="socials__item"><a class="socials__link" href="#">
                 <span class="visually-hidden">Odnoklassniki.</span>
-                <svg class="socials__icon" width="25" height="25">
+                <svg width="25" height="25">
                   <use href="img/sprite.svg#ok-logo"></use>
                 </svg>
               </a>
             </li>
             <li class="socials__item"><a class="socials__link" href="#">
                 <span class="visually-hidden">Reddit.</span>
-                <svg class="socials__icon" width="25" height="25">
+                <svg width="25" height="25">
                   <use href="img/sprite.svg#reddit-logo"></use>
                 </svg>
               </a>

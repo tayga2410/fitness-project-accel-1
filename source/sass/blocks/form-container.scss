@@ -6,14 +6,14 @@
   width: 50%;
 }
 
-.form-container__input-wrapper {
+.form-container__input {
   position: relative;
+  color: $color-default-white;
   label {
     height: 36px;
   }
-}
 
-.form-container__input {
+input {
   width: 190px;
   min-height: 36px;
   background-color: #102654;
@@ -53,6 +53,7 @@
     line-height: 22px;
   }
 }
+}
 
 .form-container__input-container {
   display: flex;
@@ -77,11 +78,11 @@
 
 .form-container__input .input-message {
   position: absolute;
-  right: 0;
-  bottom: -12px;
+  left: 0;
+  bottom: -20px;
 }
 
-.form-container__input-wrapper .input-message.is-invalid {
+.form-container__input .input-message.is-invalid {
   color: #ff0000;
   font-size: 14px;
   font-style: normal;
@@ -89,7 +90,7 @@
   line-height: 22px;
 }
 
-.form-container__input-wrapper .input-message.is-valid {
+.form-container__input .input-message.is-valid {
   color: #15ab07;
   font-size: 14px;
   font-style: normal;

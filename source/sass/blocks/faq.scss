@@ -58,14 +58,13 @@
 
 .faq__accordion-wrapper {
   opacity: 0;
+  height: 0;
   transition: opacity 1s ease;
   width: 860px;
-  visibility: 0;
 
   &.is-active {
     opacity: 1;
-    display: block;
-    visibility: 1;
+    height: auto;
   }
 
   ul {
@@ -115,7 +114,6 @@
   }
 
   p {
-    display: none;
     margin: 12px 0 0 0;
     color: #102654;
     font-size: 18px;
@@ -123,10 +121,18 @@
     font-weight: 300;
     line-height: 24px;
     width: 660px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
   }
 
-  p[data-taget="is-opened"] {
+  p[data-target="is-opened"] {
     display: block;
+  }
+
+  p.is-opened {
+    display: block;
+    max-height: 200px; /* Установите максимальную высоту для плавного показа контента */
   }
 }
 
@@ -151,6 +157,9 @@
   @include disabled {
     border: 1px solid #1c3374;
     opacity: 0.3;
+    cursor: not-allowed;
+    pointer-events: none;
+    outline: none;
   }
 }
 
@@ -194,6 +203,7 @@
   display: none;
 }
 
-.faq__button.is-closed {
-  background-color: $color-default-white;
+.faq__button.is-closed::before,
+.faq__button.is-closed::after {
+  background-color: #1c3374;
 }

@@ -5,15 +5,18 @@ function initAccordion() {
   );
   tabControls[0].classList.add("faq__tab-control--is-selected");
 
-  const firstAccordionItem = document.querySelector(
-    "li[data-target='accordion']"
-  );
+  const openFirstAccordion = () => {
+    const firstAccordionItem = document.querySelector(
+      "li[data-target='accordion']"
+    );
+    if (firstAccordionItem) {
+      const content = firstAccordionItem.querySelector("p");
+      firstAccordionItem.classList.add("is-opened");
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  };
 
-  if (firstAccordionItem) {
-    firstAccordionItem.classList.add("is-opened");
-    const content = firstAccordionItem.querySelector("p");
-    content.style.display = "block";
-  }
+  openFirstAccordion();
 
   tabControls.forEach((control) => {
     control.addEventListener("click", () => {
@@ -27,12 +30,12 @@ function initAccordion() {
       const accordion = document.querySelector(
         `.faq__accordion-wrapper[data-target="${target}"]`
       );
-   
+
       accordionWrappers.forEach((accWrapper) => {
         accWrapper.classList.remove("is-active");
 
-         accordion.classList.add("is-active");
-    });
+        accordion.classList.add("is-active");
+      });
     });
   });
 
@@ -42,32 +45,21 @@ function initAccordion() {
 
   accordionItems.forEach((item) => {
     const button = item.querySelector(".faq__button");
+    const content = item.querySelector("p");
+    const accItem = item.closest("li");
 
-    item.addEventListener("click", () => {
+    item.addEventListener("click", (event) => {
       const isOpened = item.classList.contains("is-opened");
-
-      accordionItems.forEach((accordion) => {
-        const content = accordion.querySelector("p");
-        const accButton = accordion.querySelector(".faq__button");
-
-        accordion.classList.remove("is-opened");
-        accButton.classList.remove("is-opened");
-        accButton.classList.add("is-closed");
-        content.style.display = "none";
-      });
 
       if (!isOpened) {
         item.classList.add("is-opened");
         button.classList.add("is-opened");
         button.classList.remove("is-closed");
-        const content = item.querySelector("p");
-        content.style.display = "block";
+        content.style.maxHeight = content.scrollHeight + "px";
       } else {
         item.classList.remove("is-opened");
         button.classList.remove("is-opened");
         button.classList.add("is-closed");
-        const content = item.querySelector("p");
-        content.style.display = "none";
       }
     });
   });
@@ -80,30 +72,38 @@ function initAccordion() {
     if (e.key === "Enter" || e.key === " ") {
       e.preventDefault();
       const isOpened = e.currentTarget.classList.contains("is-opened");
-
-      accordionItems.forEach((accordion) => {
-        const content = accordion.querySelector("p");
-
-        accordion.classList.remove("is-opened");
-        content.style.display = "none";
-      });
+      const content = e.currentTarget.querySelector("p");
 
       if (!isOpened) {
         e.currentTarget.classList.add("is-opened");
-        const content = e.currentTarget.querySelector("p");
         content.style.display = "block";
       } else {
         e.currentTarget.classList.remove("is-opened");
-        const content = e.currentTarget.querySelector("p");
         content.style.display = "none";
       }
     }
   };
 
+  const removeFocusFromHiddenElements = () => {
+    document.addEventListener("visibilitychange", () => {
+      if (document.hidden) {
+        const focusedElement = document.activeElement;
+        const hasOpacity = focusedElement.style.opacity === "0";
+        const hasZeroHeight = focusedElement.clientHeight === 0;
+
+        if (hasOpacity || hasZeroHeight) {
+          focusedElement.blur();
+        }
+      }
+    });
+  };
+
+  removeFocusFromHiddenElements();
+
   accordionItems.forEach((item) => {
     item.addEventListener("keydown", handleAccordionFocus);
   });
-  
+
   const handleTabFocus = (e) => {
     const currentIndex = Array.from(tabControls).findIndex((tab) =>
       tab.classList.contains("faq__tab-control--is-selected")

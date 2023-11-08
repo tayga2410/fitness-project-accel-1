@@ -1,3 +1,27 @@
 .socials__link {
-    cursor: pointer;
+  cursor: pointer;
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-color: $color-default-white;
+  border-radius: 50px;
+
+  @include hover-focus {
+    background-color: #103aae;
+    color: $color-default-white;
+  }
+
+  @include active {
+   background-color: #102654;
+   color: $color-default-white;
+  }
+
+  @include disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+    outline: none;
+    color: $color-default-white;
+    opacity: 0.3;
+  }
 }
+
