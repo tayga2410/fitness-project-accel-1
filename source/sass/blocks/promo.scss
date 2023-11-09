@@ -20,19 +20,16 @@
 .promo__wrapper {
   display: flex;
   flex-shrink: 0;
-
-  img {
-    height: 100%;
-    object-fit: cover;
-  }
 }
 
 .promo__text-wrapper {
   color: $color-default-white;
   background-color: #ed0233;
-  padding: 37px 45px;
+  padding: 40px 45px 45px 45px;
   display: flex;
   flex-direction: column;
+  width: 50%;
+  height: 462px;
 
   h4 {
     font-size: 26px;
@@ -56,8 +53,12 @@
     font-weight: 300;
     line-height: 24px;
     width: 190px;
-    margin: 0 0 178px 0;
+    margin: 0 0 176px 0;
   }
+}
+
+.promo__image-wrapper {
+  width: 50%;
 }
 
 .promo__button {
@@ -81,8 +82,8 @@
     width: 79px;
     height: 1px;
     background-color: $color-default-white;
-    bottom: 5px;
-    left: 10px;
+    bottom: -2px;
+    left: 0;
   }
 
   @include hover {
@@ -120,8 +121,8 @@
     width: 79px;
     height: 1px;
     background-color: #1c3374;
-    bottom: 5px;
-    left: 10px;
+    bottom: -4px;
+    left: 0;
   }
 
   @include focus {
@@ -136,13 +137,15 @@
   gap: 40px;
   width: 100%;
   justify-content: space-between;
+  height: 462px;
 }
 
 .promo__offer {
   display: flex;
   flex-direction: column;
-  padding: 30px 35px 35px 35px;
+  padding: 23px 28px 28px 28px;
   border: 7px solid;
+  height: 211px;
   border-image: linear-gradient(
       to right,
       rgba(209, 10, 66, 1),

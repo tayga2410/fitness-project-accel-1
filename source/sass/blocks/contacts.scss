@@ -11,16 +11,19 @@
 
 .contacts__list {
   list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 118px;
   margin: 0;
   padding: 0;
-  justify-content: space-between;
+  
 }
+
 .contacts__item {
-  width: 50%;
+  width: 171px;
 }
 .contacts__title {
+  width: 400px;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -32,4 +35,5 @@
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
+  margin: 0 0 15px 0;
 }

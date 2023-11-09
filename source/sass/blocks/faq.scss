@@ -1,5 +1,6 @@
 .faq {
   background: #f8f9fc;
+
   h2 {
     font-family: $ff-alumni;
     font-size: 54px;
@@ -7,7 +8,7 @@
     font-weight: 600;
     line-height: 54px;
     letter-spacing: 1.62px;
-    margin: 0 0 70px 0;
+    margin: 0 0 50px 0;
     padding: 120px 0 0 103px;
   }
 }
@@ -20,7 +21,7 @@
 .faq__tabs-controls {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
 }
 
 .faq__tab-control {
@@ -69,11 +70,11 @@
 
   ul {
     list-style-type: none;
-    padding: 25px 0;
+    padding: 25px 0 18px 0;
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 58px;
+    gap: 47px;
     position: relative;
 
     &::before {
@@ -101,7 +102,7 @@
       width: 100%;
       height: 1px;
       background: rgba(28, 51, 116, 0.2);
-      bottom: -25px;
+      bottom: -22px;
     }
   }
 
@@ -114,7 +115,7 @@
   }
 
   p {
-    margin: 12px 0 0 0;
+    margin: 5px 0 0 0;
     color: #102654;
     font-size: 18px;
     font-style: normal;
