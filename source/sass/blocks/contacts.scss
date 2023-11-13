@@ -12,6 +12,8 @@
     font-size: 42px;
     line-height: normal;
     letter-spacing: 1.26px;
+    font-size: 42px;
+    letter-spacing: 1.26px;
   }
 }
 
@@ -22,6 +24,10 @@
   grid-column-gap: 118px;
   margin: 0;
   padding: 0;
+
+  @include vp-1366 {
+    grid-column-gap: 140px;
+  }
 }
 
 .contacts__item {
@@ -38,6 +44,8 @@
   @include vp-1366 {
     font-size: 22px;
     line-height: 22px;
+    margin: 0 0 8px;
+    
   }
 }
 .contacts__description {
@@ -46,4 +54,8 @@
   font-weight: 400;
   line-height: 22px;
   margin: 0 0 15px 0;
+
+  @include vp-1366 {
+    margin: 0 0 30px 0;
+  }
 }

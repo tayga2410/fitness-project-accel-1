@@ -1,5 +1,4 @@
 .reviews-swiper {
-  padding: 120px 103px;
   h2 {
     font-family: $ff-alumni;
     font-size: 54px;
@@ -9,13 +8,32 @@
     letter-spacing: 1.62px;
     margin: 0 0 46px 0;
     text-align: center;
+    padding: 120px 0 0 0;
+
+    @include vp-1366 {
+      font-size: 42px;
+      line-height: 42px;
+      letter-spacing: 1.26px;
+      margin: 0 0 42px 0;
+      padding: 100px 0 0 0;
+    }
+  }
+
+  @include vp-1366 {
+    padding: 0 0 100px 0;
   }
 }
 
 .reviews-container {
   max-width: 560px;
   position: relative;
-  padding: 0;
+  padding: 0 0 121px 0;
+
+  @include vp-1366 {
+    padding: 0;
+    max-width: 580px;
+    height: 249px;
+  }
 }
 
 .reviews-slide {
@@ -29,6 +47,12 @@
   gap: 30px;
   margin: 0;
   position: relative;
+
+  @include vp-1366 {
+    padding: 60px 65px;
+    max-width: 580px;
+    height: 249px;
+  }
 }
 
 .reviews-text-wrapper {
@@ -39,6 +63,12 @@
     font-weight: 400;
     line-height: 22px; /* 100% */
     margin: 0 0 21px 0;
+
+    @include vp-1366 {
+      font-size: 20px;
+      line-height: 20px;
+      margin: 0 0 13px 0;
+    }
   }
   p {
     font-size: 16px;
@@ -46,5 +76,25 @@
     font-weight: 300;
     line-height: 24px;
     margin: 0;
+
+    @include vp-1366 {
+      width: 339px;
+    }
+  }
+}
+
+.reviews-button-next {
+  top: 26%;
+  @include vp-1366 {
+    top: 37%;
+    right: -70px;
+  }
+}
+
+.reviews-button-prev {
+  top: 27%;
+  @include vp-1366 {
+    top: 39%;
+    left: -70px;
   }
 }

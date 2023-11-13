@@ -104,6 +104,10 @@
     gap: 47px;
     position: relative;
 
+    @include vp-1366 {
+      gap: 46px;
+    }
+
     &::before {
       content: "";
       position: absolute;
@@ -145,7 +149,9 @@
     line-height: 24px;
 
     @include vp-1366 {
-      max-width: 600px;
+      max-width: 560px;
+      font-size: 22px;
+      line-height: 22px;
     }
   }
 
@@ -246,4 +252,12 @@
 .faq__button.is-closed::before,
 .faq__button.is-closed::after {
   background-color: #1c3374;
+}
+
+.faq__line-breaker {
+  display: none;
+
+  @include vp-1366 {
+    display: block;
+  }
 }

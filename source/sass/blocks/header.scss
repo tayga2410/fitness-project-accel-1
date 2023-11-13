@@ -22,7 +22,8 @@
 }
 
 .header__image {
-  display: block;
+  display: flex;
+  align-items: center;
 
   @include vp-1366 {
     width: 111px;

@@ -9,8 +9,12 @@
 .jury-container {
   max-width: 1160px;
   position: relative;
-  padding: 0 0 100px 0;
+  padding: 0 0 120px 0;
   margin: 0;
+
+  @include vp-1366 {
+    padding: 0 0 100px 0;
+  }
 }
 
 .jury-title {

@@ -1,9 +1,6 @@
 .advantages {
-  padding: 120px 0 0 0;
-
-  @include vp-1366 {
-    padding: 0;
-  }
+  padding: 0;
+  
   h2 {
     font-family: $ff-alumni;
     font-size: 54px;

@@ -22,18 +22,19 @@
     font-size: 42px;
     line-height: 42px;
     letter-spacing: 1.26px;
-    margin: 0 0 35px 0;
+    margin: 0 0 28px 0;
   }
 }
 
 .footer__contacts {
   padding: 60px 163px 60px 120px;
   width: 50%;
-  min-height: 337px;
+  height: 337px;
 
   @include vp-1366 {
     width: 100%;
     padding: 100px 214px 100px 133px;
+    height: 424px;
   }
 }
 
@@ -49,5 +50,7 @@
 
   @include vp-1366 {
     padding: 0 45px;
+    min-height: 115px;
+    justify-content: flex-start;
   }
 }
