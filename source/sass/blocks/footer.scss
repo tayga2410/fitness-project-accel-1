@@ -2,6 +2,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @include vp-1366 {
+    flex-direction: column;
+  }
 }
 
 .footer__header {
@@ -13,12 +17,24 @@
   line-height: 54px;
   letter-spacing: 1.62px;
   margin: 0 0 36px 0;
+
+  @include vp-1366 {
+    font-size: 42px;
+    line-height: 42px;
+    letter-spacing: 1.26px;
+    margin: 0 0 35px 0;
+  }
 }
 
 .footer__contacts {
   padding: 60px 163px 60px 120px;
   width: 50%;
-  height: 337px;
+  min-height: 337px;
+
+  @include vp-1366 {
+    width: 100%;
+    padding: 100px 214px 100px 133px;
+  }
 }
 
 .footer__nav {
@@ -30,4 +46,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 103px;
+
+  @include vp-1366 {
+    padding: 0 45px;
+  }
 }

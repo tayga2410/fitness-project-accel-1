@@ -10,18 +10,36 @@
     letter-spacing: 1.62px;
     margin: 0 0 50px 0;
     padding: 120px 0 0 103px;
+
+    @include vp-1366 {
+      font-size: 42px;
+      line-height: 42px; /* 100% */
+      letter-spacing: 1.26px;
+      text-align: center;
+      padding: 100px 0 0 0;
+    }
   }
 }
 .faq__container {
   padding: 0 103px 120px 103px;
   display: flex;
   gap: 40px;
+
+  @include vp-1366 {
+    padding: 0 45px 100px 45px;
+    flex-direction: column;
+  }
 }
 
 .faq__tabs-controls {
   display: flex;
   flex-direction: column;
   gap: 8px;
+
+  @include vp-1366 {
+    flex-direction: row;
+    gap: 10px;
+  }
 }
 
 .faq__tab-control {
@@ -34,6 +52,11 @@
   width: 260px;
   background-color: $color-default-white;
   border: 1px solid rgba(16, 38, 84, 0.2);
+
+  @include vp-1366 {
+    width: 162px;
+    height: 54px;
+  }
 
   @include hover-focus {
     border: 1px solid #102654;
@@ -62,6 +85,10 @@
   height: 0;
   transition: opacity 1s ease;
   width: 860px;
+
+  @include vp-1366 {
+    width: 678px;
+  }
 
   &.is-active {
     opacity: 1;
@@ -96,6 +123,10 @@
     position: relative;
     cursor: pointer;
 
+    @include vp-1366 {
+      width: 678px;
+    }
+
     &::after {
       content: "";
       position: absolute;
@@ -112,6 +143,10 @@
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
+
+    @include vp-1366 {
+      max-width: 600px;
+    }
   }
 
   p {
@@ -125,6 +160,10 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s ease;
+
+    @include vp-1366 {
+      max-width: 550px;
+    }
   }
 
   p[data-target="is-opened"] {

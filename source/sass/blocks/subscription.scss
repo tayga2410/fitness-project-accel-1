@@ -3,12 +3,17 @@
   background: #f8f9fc;
   overflow: hidden;
   z-index: 3;
+}
 
-  img {
-    position: absolute;
-    right: 0;
-    bottom: -134px;
-    z-index: 2;
+.subscription__after-image {
+  position: absolute;
+  right: 0;
+  bottom: -134px;
+  z-index: 2;
+
+  @include vp-1366 {
+    width: 275px;
+    height: 328px;
   }
 }
 
@@ -16,6 +21,10 @@
   padding: 120px 103px;
   z-index: 3;
   position: relative;
+
+  @include vp-1366 {
+    padding: 100px 164px;
+  }
 
   h2 {
     font-family: $ff-alumni;
@@ -26,6 +35,13 @@
     letter-spacing: 1.62px;
     text-align: center;
     margin: 0 0 32px 0;
+
+    @include vp-1366 {
+      font-size: 42px;
+      line-height: 42px;
+      letter-spacing: 1.26px;
+      margin: 0 0 25px;
+    }
   }
 }
 
@@ -39,6 +55,10 @@
   height: 34px;
   flex-shrink: 0;
   position: relative;
+
+  @include vp-1366 {
+    width: 334px;
+  }
 
   &::after {
     content: "";
@@ -62,6 +82,12 @@
   color: rgba(16, 38, 84, 0.5);
   cursor: pointer;
   position: relative;
+
+  @include vp-1366 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+  }
 
   @include hover-focus {
     color: #102654;
@@ -113,6 +139,12 @@
     background: $color-default-white;
     padding: 48px 77px 65px 78px;
 
+    @include vp-1366 {
+      width: 440px;
+      height: 438px;
+      padding: 65px 117px;
+    }
+
     @include hover-focus {
       border: 7px solid;
       border-image: linear-gradient(
@@ -132,6 +164,12 @@
     font-weight: 700;
     line-height: 26px;
     margin: 0 0 11px 0;
+
+    @include vp-1366 {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 24px;
+    }
   }
 
   p {
@@ -140,6 +178,10 @@
     font-weight: 300;
     line-height: 24px;
     margin: 0 0 66px 0;
+
+    @include vp-1366 {
+      margin: 0 0 63px 0;
+    }
   }
 
   span {
@@ -186,6 +228,12 @@
   padding: 27px 44px;
   outline: 2px solid #102654;
   color: #102654;
+
+  @include vp-1366 {
+    width: 205px;
+    height: 56px;
+    padding: 22px 44px;
+  }
 
   @include hover-focus {
     background: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);

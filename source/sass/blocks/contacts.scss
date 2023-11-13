@@ -7,6 +7,12 @@
   font-weight: 600;
   line-height: 54px;
   letter-spacing: 1.62px;
+
+  @include vp-1366 {
+    font-size: 42px;
+    line-height: normal;
+    letter-spacing: 1.26px;
+  }
 }
 
 .contacts__list {
@@ -16,19 +22,23 @@
   grid-column-gap: 118px;
   margin: 0;
   padding: 0;
-  
 }
 
 .contacts__item {
   width: 171px;
 }
 .contacts__title {
-  width: 400px;
+  width: 156px;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
   margin: 0 0 5px 0;
+
+  @include vp-1366 {
+    font-size: 22px;
+    line-height: 22px;
+  }
 }
 .contacts__description {
   font-size: 14px;

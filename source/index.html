@@ -38,8 +38,9 @@
     <header class="header">
       <h1 class="visually-hidden">Просторный тренажерный зал площадью 900 кв/м</h1>
       <div class="header__container">
-        <a class="header__image" href="#"><img src="img/main-logo.png" alt="" srcset="img/main-logo@2x.png" width="120"
-            height="26"></a>
+        <a class="header__image" href="#">
+          <img src="img/main-logo.png" alt="" srcset="img/main-logo@2x.png" width="120" height="26">
+        </a>
         <a class="header__telephone" href="tel:8-800-555-55-55">8-800-555-55-55</a>
       </div>
     </header>
@@ -83,18 +84,22 @@
               несколько оборудованных залов для различных видов групповых занятий. </p>
           </div>
           <div class="about__media-wrapper">
-            <picture>
-              <source type="image/webp" media="(max-width: 767px)"
-                srcset="img/gym-picture-mobile.webp 1x, img/gym-picture-mobile@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 767px)"
-                srcset="img/gym-picture-mobile.png 1x, img/gym-picture-mobile@2x.png 2x">
-              <source type="image/webp" media="(max-width: 1365px)"
-                srcset="img/gym-picture-tablet.webp 1x, img/gym-picture-tablet@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 1365px)"
-                srcset="img/gym-picture-tablet.png 1x, img/gym-picture-tablet@2x.png 2x">
-              <img src="img/gym-picture-desktop.png" srcset="img/gym-picture-desktop@2x.png 2x" width="660" height="401"
-                alt="">
-            </picture>
+            <div class="about__image-wrapper">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/gym-picture-mobile.webp 1x, img/gym-picture-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/gym-picture-mobile.png 1x, img/gym-picture-mobile@2x.png 2x">
+
+                <source type="image/webp" media="(max-width: 1365px)"
+                  srcset="img/gym-picture-tablet.webp 1x, img/gym-picture-tablet@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1365px)"
+                  srcset="img/gym-picture-tablet.png 1x, img/gym-picture-tablet@2x.png 2x">
+
+                <img src="img/gym-picture-desktop.png" srcset="img/gym-picture-desktop@2x.png 2x" width="660"
+                  height="401" alt="">
+              </picture>
+            </div>
             <div class="about__iframe-wrapper">
               <picture>
                 <source type="image/webp" media="(max-width: 767px)"
@@ -163,6 +168,7 @@
             </ul>
           </div>
         </div>
+        <div class="subscription__after-image">
         <picture>
           <source type="image/webp" media="(max-width: 1365px)"
             srcset="img/weights-tablet.webp 1x, img/weights-tablet@2x.webp 2x">
@@ -170,6 +176,7 @@
             srcset="img/weights-tablet.png 1x, img/weights-tablet@2x.png 2x">
           <img src="img/weights-desktop.png" alt="" srcset="img/weights-desktop@2x.png 2x" width="275" height="328">
         </picture>
+      </div>
       </section>
       <section class="games">
         <div class="games__container container">
@@ -218,7 +225,7 @@
           </button>
           <div class="swiper" data-swiper="jury">
             <div class="swiper-wrapper">
-              <div class="swiper-slide jury-slide">
+              <div class="swiper-slide jury-slide" tabindex="0">
                 <picture>
                   <source type="image/webp" media="(max-width: 767px)"
                     srcset="img/swiper-slide-1-mobile.webp 1x, img/swiper-slide-1-mobile@2x.webp 2x">
@@ -228,7 +235,7 @@
                     srcset="img/swiper-slide-1-tablet.webp 1x, img/swiper-slide-1-tablet@2x.webp 2x">
                   <source type="image/webp" media="(max-width: 1365px)"
                     srcset="img/swiper-slide-1-tablet.png 1x, img/swiper-slide-1-tablet@2x.png 2x">
-                  <img class="swiper__image" src="img/swiper-slide-1-desktop.png" alt=""
+                  <img src="img/swiper-slide-1-desktop.png" alt=""
                     srcset="img/swiper-slide-1-desktop@2x.png 2x" width="260" height="294">
                 </picture>
                 <span class="jury-swiper-name">Анна Павлова</span>
@@ -242,7 +249,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="swiper-slide jury-slide">
+              <div class="swiper-slide jury-slide" tabindex="0">
                 <picture>
                   <source type="image/webp" media="(max-width: 767px)"
                     srcset="img/swiper-slide-2-mobile.webp 1x, img/swiper-slide-2-mobile@2x.webp 2x">
@@ -252,7 +259,7 @@
                     srcset="img/swiper-slide-2-tablet.webp 1x, img/swiper-slide-2-tablet@2x.webp 2x">
                   <source type="image/webp" media="(max-width: 1365px)"
                     srcset="img/swiper-slide-2-tablet.png 1x, img/swiper-slide-2-tablet@2x.png 2x">
-                  <img class="swiper__image" src="img/swiper-slide-2-desktop.png" alt=""
+                  <img src="img/swiper-slide-2-desktop.png" alt=""
                     srcset="img/swiper-slide-2-desktop@2x.png 2x" width="260" height="294">
                 </picture>
                 <span class="jury-swiper-name">Алексей Лавров</span>
@@ -266,7 +273,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="swiper-slide jury-slide">
+              <div class="swiper-slide jury-slide" tabindex="0">
                 <picture>
                   <source type="image/webp" media="(max-width: 767px)"
                     srcset="img/swiper-slide-3-mobile.webp 1x, img/swiper-slide-3-mobile@2x.webp 2x">
@@ -276,7 +283,7 @@
                     srcset="img/swiper-slide-3-tablet.webp 1x, img/swiper-slide-3-tablet@2x.webp 2x">
                   <source type="image/webp" media="(max-width: 1365px)"
                     srcset="img/swiper-slide-3-tablet.png 1x, img/swiper-slide-3-tablet@2x.png 2x">
-                  <img class="swiper__image" src="img/swiper-slide-3-desktop.png" alt=""
+                  <img src="img/swiper-slide-3-desktop.png" alt=""
                     srcset="img/swiper-slide-3-desktop@2x.png 2x" width="260" height="294">
                 </picture>
                 <span class="jury-swiper-name">Александр Пашков</span>
@@ -290,7 +297,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="swiper-slide jury-slide">
+              <div class="swiper-slide jury-slide" tabindex="0">
                 <picture>
                   <source type="image/webp" media="(max-width: 767px)"
                     srcset="img/swiper-slide-4-mobile.webp 1x, img/swiper-slide-4-mobile@2x.webp 2x">
@@ -300,7 +307,7 @@
                     srcset="img/swiper-slide-4-tablet.webp 1x, img/swiper-slide-4-tablet@2x.webp 2x">
                   <source type="image/webp" media="(max-width: 1365px)"
                     srcset="img/swiper-slide-4-tablet.png 1x, img/swiper-slide-4-tablet@2x.png 2x">
-                  <img class="swiper__image" src="img/swiper-slide-4-desktop.png" alt=""
+                  <img src="img/swiper-slide-4-desktop.png" alt=""
                     srcset="img/swiper-slide-4-desktop@2x.png 2x" width="260" height="294">
                 </picture>
                 <span class="jury-swiper-name">Мария Кетова</span>
@@ -314,7 +321,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="swiper-slide jury-slide">
+              <div class="swiper-slide jury-slide" tabindex="0">
                 <picture>
                   <source type="image/webp" media="(max-width: 767px)"
                     srcset="img/swiper-slide-1-mobile.webp 1x, img/swiper-slide-1-mobile@2x.webp 2x">
@@ -324,7 +331,7 @@
                     srcset="img/swiper-slide-1-tablet.webp 1x, img/swiper-slide-1-tablet@2x.webp 2x">
                   <source type="image/webp" media="(max-width: 1365px)"
                     srcset="img/swiper-slide-1-tablet.png 1x, img/swiper-slide-1-tablet@2x.png 2x">
-                  <img class="swiper__image" src="img/swiper-slide-1-desktop.png" alt=""
+                  <img src="img/swiper-slide-1-desktop.png" alt=""
                     srcset="img/swiper-slide-1-desktop@2x.png 2x" width="260" height="294">
                 </picture>
                 <span class="jury-swiper-name">Мария Васильева</span>
@@ -338,7 +345,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="swiper-slide jury-slide">
+              <div class="swiper-slide jury-slide" tabindex="0">
                 <picture>
                   <source type="image/webp" media="(max-width: 767px)"
                     srcset="img/swiper-slide-2-mobile.webp 1x, img/swiper-slide-2-mobile@2x.webp 2x">
@@ -348,7 +355,7 @@
                     srcset="img/swiper-slide-2-tablet.webp 1x, img/swiper-slide-2-tablet@2x.webp 2x">
                   <source type="image/webp" media="(max-width: 1365px)"
                     srcset="img/swiper-slide-2-tablet.png 1x, img/swiper-slide-2-tablet@2x.png 2x">
-                  <img class="swiper__image" src="img/swiper-slide-2-desktop.png" alt=""
+                  <img src="img/swiper-slide-2-desktop.png" alt=""
                     srcset="img/swiper-slide-2-desktop@2x.png 2x" width="260" height="294">
                 </picture>
                 <span class="jury-swiper-name">Дмитрий Шолохов</span>
@@ -362,7 +369,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="swiper-slide jury-slide">
+              <div class="swiper-slide jury-slide" tabindex="0">
                 <picture>
                   <source type="image/webp" media="(max-width: 767px)"
                     srcset="img/swiper-slide-3-mobile.webp 1x, img/swiper-slide-3-mobile@2x.webp 2x">
@@ -372,7 +379,7 @@
                     srcset="img/swiper-slide-3-tablet.webp 1x, img/swiper-slide-3-tablet@2x.webp 2x">
                   <source type="image/webp" media="(max-width: 1365px)"
                     srcset="img/swiper-slide-3-tablet.png 1x, img/swiper-slide-3-tablet@2x.png 2x">
-                  <img class="swiper__image" src="img/swiper-slide-3-desktop.png" alt=""
+                  <img src="img/swiper-slide-3-desktop.png" alt=""
                     srcset="img/swiper-slide-3-desktop@2x.png 2x" width="260" height="294">
                 </picture>
                 <span class="jury-swiper-name">Олег Симонов</span>
@@ -386,7 +393,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="swiper-slide jury-slide">
+              <div class="swiper-slide jury-slide" tabindex="0">
                 <picture>
                   <source type="image/webp" media="(max-width: 767px)"
                     srcset="img/swiper-slide-4-mobile.webp 1x, img/swiper-slide-4-mobile@2x.webp 2x">
@@ -396,7 +403,7 @@
                     srcset="img/swiper-slide-4-tablet.webp 1x, img/swiper-slide-4-tablet@2x.webp 2x">
                   <source type="image/webp" media="(max-width: 1365px)"
                     srcset="img/swiper-slide-4-tablet.png 1x, img/swiper-slide-4-tablet@2x.png 2x">
-                  <img class="swiper__image" src="img/swiper-slide-4-desktop.png" alt=""
+                  <img src="img/swiper-slide-4-desktop.png" alt=""
                     srcset="img/swiper-slide-4-desktop@2x.png 2x" width="260" height="294">
                 </picture>
                 <span class="jury-swiper-name">Анна Костылева</span>
@@ -490,11 +497,11 @@
               <picture>
                 <source type="image/webp" media="(max-width: 767px)"
                   srcset="img/promo-image-mobile.webp 1x, img/promo-image-mobile@2x.webp 2x">
-                <source type="image/webp" media="(max-width: 767px)"
+                  <source type="image/webp" media="(max-width: 1365px)"
+                    srcset="img/promo-image-tablet.webp 1x, img/promo-image-tablet@2x.webp 2x">
+                <source type="image/png" media="(max-width: 767px)"
                   srcset="img/promo-image-mobile.png 1x, img/promo-image-mobile@2x.png 2x">
-                <source type="image/webp" media="(max-width: 1365px)"
-                  srcset="img/promo-image-tablet.webp 1x, img/promo-image-tablet@2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1365px)"
+                <source type="image/png" media="(max-width: 1365px)"
                   srcset="img/promo-image-tablet.png 1x, img/promo-image-tablet@2x.png 2x">
                 <img src="img/promo-image-desktop.png" srcset="img/promo-image-desktop.png 2x" width="280" height="462"
                   alt="">

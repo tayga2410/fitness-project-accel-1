@@ -5,6 +5,11 @@
   line-height: 24px;
   text-transform: uppercase;
   margin: 0 22px 0 0;
+
+  @include vp-1366 {
+    width: 100px;
+    height: 22px;
+  }
 }
 
 .nav__user-list {

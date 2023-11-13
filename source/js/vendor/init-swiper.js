@@ -7,12 +7,21 @@ const jurySwiperLoop = loopEnabled;
 const reviewsSwiperLoop = loopDisabled;
 
 const jurySwiperOptions = {
-  slidesPerView: 4,
   loop: jurySwiperLoop,
-  spaceBetween: 40,
   navigation: {
     nextEl: '[data-swiper="jury-container"] [data-swiper="button-next"]',
     prevEl: '[data-swiper="jury-container"] [data-swiper="button-prev"]',
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 32,
+      initialSlide: 2,
+    },
+    1366: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    }
   },
 };
 

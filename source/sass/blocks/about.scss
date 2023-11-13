@@ -1,13 +1,31 @@
-
 .about__container {
   display: flex;
   gap: 145px;
-  padding: 120px 0 235px 0;
-  width: 1160px;
+  padding: 120px 103px 235px 103px;
+
+  @include vp-1366 {
+    flex-direction: column;
+    gap: 38px;
+    align-items: center;
+    padding: 100px 0 183px 0;
+  }
+
+  @include vp-768 {
+    padding: 70px 26px 70px 15px;
+  }
 }
 
 .about__text-wrapper {
   width: 350px;
+
+  @include vp-1366 {
+    text-align: center;
+    width: 505px;
+  }
+
+  @include vp-768 {
+    width: 280px;
+  }
 
   h2 {
     font-family: $ff-alumni;
@@ -17,6 +35,19 @@
     line-height: 54px;
     letter-spacing: 1.62px;
     margin: 0 0 25px 0;
+
+    @include vp-1366 {
+      font-size: 42px;
+      line-height: 42px;
+      letter-spacing: 1.26px;
+      margin: 0 0 20px 0;
+    }
+
+    @include vp-768 {
+      font-size: 32px;
+      line-height: 32px;
+      letter-spacing: 0.96px;
+    }
   }
 
   h3 {
@@ -25,6 +56,18 @@
     font-weight: 400;
     line-height: 22px;
     margin: 0 0 95px 0;
+
+    @include vp-1366 {
+      font-size: 20px;
+      line-height: 20px;
+      margin: 0 0 34px 0;
+    }
+
+    @include vp-768 {
+      font-size: 18px;
+      line-height: 20px;
+      margin: 0 0 40px 0;
+    }
   }
 
   p {
@@ -33,15 +76,43 @@
     font-weight: 300;
     line-height: 24px; /* 150% */
     margin: 0 0 5px 0;
+
+    @include vp-1366 {
+      width: 505px;
+      text-align: center;
+    }
+
+    @include vp-768 {
+      width: 279px;
+      text-align: start;
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+
+  p + p {
+    @include vp-1366 {
+      display: none;
+    }
   }
 }
 
 .about__media-wrapper {
   position: relative;
+}
 
-  img {
-    object-fit: cover;
-    background: rgba(20, 54, 122, 0.5);
+.about__image-wrapper {
+  @include vp-1366 {
+    padding: 0 45px;
+    width: 768px;
+    height: 345px;
+  }
+
+  @include vp-768 {
+    width: 320px;
+    height: 313px;
+    padding: 0;
+    margin: 0 0 40px 0;
   }
 }
 
@@ -51,6 +122,22 @@
   right: 54%;
   width: 364px;
   height: 228px;
+
+  @include vp-1366 {
+    width: 265px;
+    height: 167px;
+    top: 74%;
+    right: 33%;
+  }
+
+  @include vp-768 {
+    width: 320px;
+    height: 167px;
+    position: static;
+    width: 100%;
+    inset: 0;
+    transform: translateX(0);
+    }
 
   &::before {
     position: absolute;

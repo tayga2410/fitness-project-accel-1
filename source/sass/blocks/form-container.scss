@@ -5,6 +5,12 @@
   flex-direction: column;
   width: 50%;
   height: 337px;
+
+  @include vp-1366 {
+    width: 100%;
+    padding: 100px 133px;
+    height: 389px;
+  }
 }
 
 .form-container__input {
@@ -14,52 +20,60 @@
     height: 36px;
   }
 
-input {
-  width: 190px;
-  min-height: 36px;
-  background-color: #102654;
-  color: $color-default-white;
-  border: none;
-  border-bottom: 1px solid rgba(225, 225, 225, 0.8);
-  position: relative;
-  padding: 0;
-
-  @include hover {
-    border-bottom: 1px solid $color-default-white;
-  }
-
-  @include active {
-    border: none;
-    outline: 1px solid $color-default-white;
-  }
-
-  @include focus {
-    border: none;
-    outline: 1px solid $color-default-white;
-  }
-
-  @include disabled {
-    opacity: 0.4;
-    cursor: not-allowed;
-    pointer-events: none;
-    outline: none;
-    border-bottom: 1px solid $color-default-white;
-  }
-
-  &::placeholder {
+  input {
+    width: 190px;
+    min-height: 36px;
+    background-color: #102654;
     color: $color-default-white;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 22px;
+    border: none;
+    border-bottom: 1px solid rgba(225, 225, 225, 0.8);
+    position: relative;
+    padding: 0;
+
+    @include vp-1366 {
+      width: 221px;
+    }
+
+    @include hover {
+      border-bottom: 1px solid $color-default-white;
+    }
+
+    @include active {
+      border: none;
+      outline: 1px solid $color-default-white;
+    }
+
+    @include focus {
+      border: none;
+      outline: 1px solid $color-default-white;
+    }
+
+    @include disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+      pointer-events: none;
+      outline: none;
+      border-bottom: 1px solid $color-default-white;
+    }
+
+    &::placeholder {
+      color: $color-default-white;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 22px;
+    }
   }
-}
 }
 
 .form-container__input-container {
   display: flex;
   gap: 30px;
   margin: 0 0 28px 0;
+
+  @include vp-1366 {
+    gap: 60px;
+  }
 }
 
 .form-container__button {
@@ -75,6 +89,11 @@ input {
   line-height: 12px;
   letter-spacing: 0.6px;
   text-transform: uppercase;
+
+  @include vp-1366 {
+    width: 502px;
+    padding: 21px 197px;
+  }
 }
 
 .form-container__input .input-message {

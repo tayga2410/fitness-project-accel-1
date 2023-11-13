@@ -5,6 +5,10 @@
 .games__container {
   padding: 114px 103px;
   z-index: 1;
+
+  @include vp-1366 {
+    padding: 100px 45px;
+  }
 }
 
 .games__wrapper {
@@ -17,6 +21,10 @@
   width: 43%;
   background: #ed0233;
   padding: 80px;
+
+  @include vp-1366 {
+    padding: 40px 45px 45px 45px;
+  }
 }
 .games__text-wrapper {
   color: $color-default-white;
@@ -24,7 +32,11 @@
   grid-template-columns: 1fr 1fr;
   gap: 16px 69px;
   margin: 0 0 23px 0;
- 
+
+  @include vp-1366 {
+    gap: 9px 42px;
+    margin: 0 0 4px 0;
+  }
 }
 
 .games__title {
@@ -38,6 +50,12 @@
   letter-spacing: 2.46px;
   text-transform: uppercase;
   margin: 0;
+
+  @include vp-1366 {
+    font-size: 48px;
+    line-height: 46px;
+    letter-spacing: 1.44px;
+  }
 }
 
 .games__information {
@@ -46,6 +64,11 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+
+  @include vp-1366 {
+    width: 57px;
+    height: 50px;
+  }
 }
 
 .games__small-title {
@@ -57,14 +80,24 @@
   margin: 0 0 12px 0;
   position: relative;
 
+  @include vp-1366 {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0 0 1px 0;
+  }
+
   &::after {
     content: "";
     position: absolute;
     display: block;
-    width: 64px;
+    width: 100%;
     height: 1px;
     background-color: $color-default-white;
     bottom: -8px;
+
+    @include vp-1366 {
+      bottom: 2px;
+    }
   }
 
   &--divider {
@@ -72,10 +105,14 @@
       content: "";
       position: absolute;
       display: block;
-      width: 92px;
+      width: 100%;
       height: 1px;
       background-color: $color-default-white;
       bottom: -8px;
+
+      @include vp-1366 {
+        bottom: 3px;
+      }
     }
   }
 }
@@ -86,13 +123,26 @@
   font-weight: 700;
   line-height: 40px;
   margin: 0 6px 0 0;
+
+  @include vp-1366 {
+    font-size: 24px;
+    line-height: 24px;
+    margin: 0 4px 0 0;
+  }
 }
+
 .games__text {
   width: 66%;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 19px;
+
+  @include vp-1366 {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 100%;
+  }
 }
 
 .games__description {
@@ -103,6 +153,10 @@
   font-weight: 300;
   line-height: 24px; /* 133.333% */
   margin: 0 0 55px 0;
+
+  @include vp-1366 {
+    margin: 0 0 21px 0;
+  }
 }
 .games__button {
   grid-column: span 2;
@@ -119,6 +173,12 @@
   background-color: transparent;
   color: $color-default-white;
   border: 2px solid $color-default-white;
+
+  @include vp-1366 {
+    width: 202px;
+    height: 56px;
+    padding: 20px 41px;
+  }
 
   @include hover-focus {
     background-color: $color-default-white;
