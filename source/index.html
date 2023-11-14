@@ -524,7 +524,6 @@
       <section class="faq">
         <h2>Вопросы и ответы</h2>
         <div class="faq__container container">
-          <div class="faq__tabs">
             <div class="faq__tabs-controls" data-tabs="controls">
               <button class="faq__tab-control  faq__tab-control--is-selected button" type="button"
                 data-target="center">Центр</button>
@@ -532,12 +531,11 @@
               <button class="faq__tab-control button" type="button" data-target="services">Услуги</button>
               <button class="faq__tab-control button" type="button" data-target="rules">Правила</button>
             </div>
-          </div>
           <div class="faq__accordion-container">
             <div class="faq__accordion-wrapper is-active" data-target="center">
               <ul>
                 <li data-target="accordion">
-                  <h5>Как стать членом фитнес-центра?</h5>
+                  <h5>Как стать членом<br> фитнес-центра?</h5>
                   <button class="faq__button button is-opened">Открытая информацию</button>
                   <p data-target="is-opened">При первом посещении и покупке абонемента, необходимо заполнить анкету и
                     подписать договор. При
@@ -675,7 +673,11 @@
                   <picture>
                     <source type="image/webp" media="(max-width: 767px)"
                       srcset="img/reviews-slide-1-mobile.webp 1x, img/reviews-slide-1-mobile@2x.webp 2x">
-                    <source type="image/webp" media="(max-width: 1365px)"
+                      <source type="image/png" media="(max-width: 767px)"
+                      srcset="img/reviews-slide-1-mobile.png 1x, img/reviews-slide-1-mobile@2x.png 2x">
+                      <source type="image/webp" media="(max-width: 1365px)"
+                      srcset="img/reviews-slide-1-tablet.webp 1x, img/reviews-slide-1-tablet@2x.webp 2x">
+                    <source type="image/png" media="(max-width: 1365px)"
                       srcset="img/reviews-slide-1-tablet.png 1x, img/reviews-slide-1-tablet@2x.png 2x">
                     <img src="img/reviews-slide-1-desktop.png" srcset="img/reviews-slide-1-desktop@2x.png 2x" alt=""
                       width="80" height="80">

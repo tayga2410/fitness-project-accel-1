@@ -39,7 +39,8 @@
   }
 
   @include vp-768 {
-    padding: 0 15px 70px 15px;
+    padding: 0 15px 90px 15px;
+    gap: 0;
   }
 }
 
@@ -56,6 +57,7 @@
   @include vp-768 {
     flex-wrap: wrap;
     gap: 8px;
+    margin: 0 0 52px 0;
   }
 }
 
@@ -79,7 +81,7 @@
     width: 141px;
     font-size: 16px;
     line-height: 16px;
-    padding: 14px 48px;
+    padding: 14px 33px;
     height: 44px;
   }
 
@@ -132,6 +134,10 @@
       gap: 46px;
     }
 
+    @include vp-768 {
+      gap: 44px;
+      padding: 0;
+
     &::before {
       content: "";
       position: absolute;
@@ -139,8 +145,13 @@
       height: 1px;
       background: rgba(28, 51, 116, 0.2);
       top: 0;
+
+      @include vp-768 {
+        top: -25px;
+      }
     }
   }
+}
 
   li {
     flex-grow: 1;
@@ -151,7 +162,8 @@
     cursor: pointer;
     width: 100%;
 
-    @include vp-1366 {
+    &:first-child {
+      gap: 20px;
     }
 
     &::after {
@@ -161,6 +173,14 @@
       height: 1px;
       background: rgba(28, 51, 116, 0.2);
       bottom: -22px;
+    }
+  }
+
+  br {
+    display: none;
+
+    @include vp-768 {
+      display: block;
     }
   }
 
@@ -181,6 +201,7 @@
       font-size: 20px;
       line-height: 20px;
       width: 238px;
+      margin: 0 auto 0 0;
     }
   }
 
@@ -199,16 +220,19 @@
     @include vp-1366 {
       max-width: 550px;
     }
+
+    @include vp-768 {
+      width: 279px;
+      font-size: 16px;
+      line-height: 20px;
+      margin: 0;
+    }
   }
 
   p[data-target="is-opened"] {
     display: block;
   }
 
-  p.is-opened {
-    display: block;
-    max-height: 200px; /* Установите максимальную высоту для плавного показа контента */
-  }
 }
 
 .faq__button {
@@ -224,6 +248,12 @@
   font-size: 0;
   position: relative;
   z-index: 0;
+
+  @include vp-768 {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+  }
 
   @include hover-focus {
     background-color: #1c3374;
@@ -247,6 +277,11 @@
   height: 1px;
   background-color: #1c3374;
   transform: translate(-50%, -50%);
+
+  @include vp-768 {
+    width: 14px;
+  }
+
 }
 
 .faq__button::after {
@@ -258,6 +293,11 @@
   height: 20px;
   background-color: #1c3374;
   transform: translate(-50%, -50%);
+
+  @include vp-768 {
+    height: 14px;
+  }
+
 }
 
 .faq__button.is-opened {
