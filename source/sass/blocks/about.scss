@@ -5,9 +5,9 @@
 
   @include vp-1366 {
     flex-direction: column;
-    gap: 38px;
     align-items: center;
     padding: 100px 0 183px 0;
+    gap: 0;
   }
 
   @include vp-768 {
@@ -81,6 +81,7 @@
     @include vp-1366 {
       width: 505px;
       text-align: center;
+      margin: 0 0 36px 0;
     }
 
     @include vp-768 {
@@ -104,15 +105,9 @@
 
 .about__image-wrapper {
   @include vp-1366 {
-    padding: 0 45px;
-    width: 768px;
-    height: 345px;
   }
 
   @include vp-768 {
-    width: 320px;
-    height: 313px;
-    padding: 0;
     margin: 0 0 40px 0;
   }
 }

@@ -17,23 +17,38 @@
       padding: 100px 0 0 0;
       margin: 0 0 40px 0;
     }
+
+    @include vp-768 {
+      font-size: 32px;
+      line-height: 32px;
+      letter-spacing: 0.96px;
+      padding: 70px 0 0 0;
+    }
   }
 }
 .promo__container {
   display: flex;
   gap: 40px;
-  padding: 0px 103px 120px 103px;
+  padding: 0 103px 120px 103px;
 
   @include vp-1366 {
-    padding: 0px 45px 100px 45px;
+    padding: 0 45px 100px 45px;
     flex-direction: column;
     gap: 31px;
+  }
+
+  @include vp-768 {
+    padding: 0 15px 70px 15px;
   }
 }
 
 .promo__wrapper {
   display: flex;
   flex-shrink: 0;
+
+  @include vp-768 {
+    flex-direction: column;
+  }
 }
 
 .promo__text-wrapper {
@@ -42,7 +57,12 @@
   padding: 40px 45px 45px 45px;
   display: flex;
   flex-direction: column;
-  height: 462px;
+
+  @include vp-768 {
+    width: 290px;
+    text-align: center;
+    padding: 45px 50px 46px 50px;
+  }
 
   h4 {
     font-size: 26px;
@@ -79,16 +99,18 @@
     @include vp-1366 {
       margin: 0 0 186px 0;
     }
+
+    @include vp-768 {
+      margin: 0 0 35px 0;
+    }
   }
 }
 
 .promo__image-wrapper {
   img {
-
     @include vp-1366 {
       width: 100%;
     }
-   
   }
 }
 
@@ -106,6 +128,10 @@
   width: 99px;
   border: none;
   cursor: pointer;
+
+  @include vp-768 {
+    margin: 0 auto;
+  }
 
   &::after {
     content: "";
@@ -166,21 +192,22 @@
   gap: 40px;
   width: 100%;
   justify-content: space-between;
-  height: 462px;
 
   @include vp-1366 {
     flex-direction: row;
     gap: 31px;
-    height: 211px;
+  }
+
+  @include vp-768 {
+    flex-direction: column;
   }
 }
 
 .promo__offer {
   display: flex;
   flex-direction: column;
-  padding: 23px 28px 28px 28px;
+  padding: 23px 28px 33px 28px;
   border: 7px solid;
-  height: 211px;
   border-image: linear-gradient(
       to right,
       rgba(209, 10, 66, 1),
@@ -194,6 +221,12 @@
     padding: 23px 38px 28px 28px;
   }
 
+  @include vp-768 {
+    text-align: center;
+    width: 290px;
+    padding: 38px 58px 37px 57px;
+  }
+
   h4 {
     font-size: 26px;
     font-style: normal;
@@ -204,6 +237,11 @@
     @include vp-1366 {
       font-size: 24px;
       line-height: 24px;
+    }
+
+    @include vp-768 {
+      font-size: 22px;
+      line-height: 22px;
     }
   }
 
@@ -218,6 +256,13 @@
       width: 234px;
       height: 48px;
       margin: 0 0 45px 0;
+    }
+
+    @include vp-768 {
+      width: 160px;
+      font-size: 14px;
+      line-height: 22px;
+      margin: 0 auto 31px auto;
     }
   }
 }

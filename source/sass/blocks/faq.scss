@@ -29,6 +29,10 @@
     padding: 0 45px 100px 45px;
     flex-direction: column;
   }
+
+  @include vp-768 {
+    padding: 0 15px 70px 15px;
+  }
 }
 
 .faq__tabs-controls {
@@ -39,6 +43,11 @@
   @include vp-1366 {
     flex-direction: row;
     gap: 10px;
+  }
+
+  @include vp-768 {
+    flex-wrap: wrap;
+    gap: 8px;
   }
 }
 
@@ -56,6 +65,13 @@
   @include vp-1366 {
     width: 162px;
     height: 54px;
+  }
+
+  @include vp-768 {
+    width: 141px;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 14px 48px;
   }
 
   @include hover-focus {
@@ -84,10 +100,9 @@
   opacity: 0;
   height: 0;
   transition: opacity 1s ease;
-  width: 860px;
+  width: 100%;
 
   @include vp-1366 {
-    width: 678px;
   }
 
   &.is-active {
@@ -123,12 +138,11 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    width: 860px;
     position: relative;
     cursor: pointer;
+    width: 100%;
 
     @include vp-1366 {
-      width: 678px;
     }
 
     &::after {
@@ -152,6 +166,12 @@
       max-width: 560px;
       font-size: 22px;
       line-height: 22px;
+    }
+
+    @include vp-768 {
+      font-size: 20px;
+      line-height: 20px;
+      width: 238px;
     }
   }
 

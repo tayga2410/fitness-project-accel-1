@@ -1,15 +1,16 @@
 .form-container {
-  padding: 60px 170px 60px 103px;
+  padding: 60px 170px 59px 103px;
   background-color: #102654;
   display: flex;
   flex-direction: column;
-  width: 50%;
-  height: 337px;
 
   @include vp-1366 {
     width: 100%;
     padding: 100px 133px;
-    height: 389px;
+  }
+
+  @include vp-768 {
+    padding: 70px 15px;
   }
 }
 
@@ -32,6 +33,10 @@
 
     @include vp-1366 {
       width: 221px;
+    }
+
+    @include vp-768 {
+      width: 100%;
     }
 
     @include hover {
@@ -74,6 +79,12 @@
   @include vp-1366 {
     gap: 60px;
   }
+
+  @include vp-768 {
+    flex-direction: column;
+    gap: 35px;
+    margin: 0 0 40px 0;
+  }
 }
 
 .form-container__button {
@@ -93,6 +104,11 @@
   @include vp-1366 {
     width: 502px;
     padding: 21px 197px;
+  }
+
+  @include vp-768 {
+    width: 290px;
+    padding: 22px 106px;
   }
 }
 

@@ -20,21 +20,26 @@
 .contacts__list {
   list-style-type: none;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 170px 110px;
   grid-column-gap: 118px;
+  row-gap: 15px;
   margin: 0;
   padding: 0;
 
   @include vp-1366 {
     grid-column-gap: 140px;
   }
+
+  @include vp-768 {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
 }
 
 .contacts__item {
-  width: 171px;
 }
 .contacts__title {
-  width: 156px;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -53,9 +58,13 @@
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
-  margin: 0 0 15px 0;
+  margin: 0;
 
   @include vp-1366 {
     margin: 0 0 30px 0;
+  }
+
+  @include vp-768 {
+    margin: 0;
   }
 }

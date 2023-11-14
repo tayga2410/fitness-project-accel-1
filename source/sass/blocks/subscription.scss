@@ -15,6 +15,10 @@
     width: 275px;
     height: 328px;
   }
+
+  @include vp-768 {
+    display: none;
+  }
 }
 
 .subscription__container {
@@ -51,11 +55,10 @@
 
 .subscription__tabs-controls {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   gap: 50px;
   margin: 0 auto 51px auto;
-  width: 348px;
+  width: 349px;
   height: 34px;
   flex-shrink: 0;
   position: relative;
@@ -93,7 +96,6 @@
 
   @include vp-1366 {
     font-size: 18px;
-    font-weight: 400;
     line-height: 18px;
   }
 
@@ -156,6 +158,11 @@
       width: 440px;
       height: 438px;
       padding: 65px 117px;
+    }
+
+    @include vp-768 {
+      width: 290px;
+      padding: 50px 42px;
     }
 
     @include hover-focus {

@@ -9,10 +9,18 @@
   @include vp-1366 {
     padding: 100px 45px;
   }
+
+  @include vp-768 {
+    padding: 70px 15px;
+  }
 }
 
 .games__wrapper {
   display: flex;
+
+  @include vp-768 {
+    flex-direction: column;
+  }
 }
 
 .games__content-container {
@@ -24,6 +32,11 @@
 
   @include vp-1366 {
     padding: 40px 45px 45px 45px;
+  }
+
+  @include vp-768 {
+    width: 100%;
+    padding: 40px;
   }
 }
 .games__text-wrapper {

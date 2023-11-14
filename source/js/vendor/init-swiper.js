@@ -13,6 +13,11 @@ const jurySwiperOptions = {
     prevEl: '[data-swiper="jury-container"] [data-swiper="button-prev"]',
   },
   breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      initialSlide: 2,
+    },
     768: {
       slidesPerView: 2,
       spaceBetween: 32,
