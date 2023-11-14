@@ -19,7 +19,7 @@
   width: 100%;
 
   @include vp-1366 {
-    padding: 0 45px 100px 45px;
+    padding: 0 45px 95px 45px;
     gap: 30px;
   }
 
@@ -44,22 +44,22 @@
 .intro__text-wrapper {
   display: grid;
   grid-template-columns: 113px 270px;
+  grid-template-rows: auto 1fr auto;
   width: 385px;
-  height: 400px;
-  padding: 62px 0 0 0;
+  padding: 62px 0;
 
   @include vp-1366 {
-    padding: 31px 0 0 0;
+    padding: 35px 0;
     width: 324px;
-    height: 328px;
     grid-template-columns: 113px 185px;
-    grid-column-gap: 27px;
+    grid-column-gap: 26px;
   }
 
   @include vp-768 {
     width: 290px;
     grid-template-columns: 113px 162px;
     grid-column-gap: 13px;
+    padding: 35px 0 0 0;
   }
 
   ul {
@@ -70,6 +70,10 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+
+    @include vp-768 {
+      padding: 18px 0 0 0;
+    }
   }
 
   li {
@@ -104,12 +108,14 @@
       font-style: normal;
       line-height: 42px;
       letter-spacing: 1.26px;
+      margin: 0 0 10px 0;
     }
 
     @include vp-768 {
       font-size: 32px;
       line-height: 32px;
       letter-spacing: 0.96px;
+      margin: 0 0 14px 0;
     }
   }
 
@@ -129,12 +135,14 @@
       font-size: 72px;
       line-height: 85px;
       letter-spacing: 0.6px;
+      margin: 0 0 47px 0;
     }
 
     @include vp-768 {
       font-size: 62px;
       line-height: 70px;
       letter-spacing: 1.86px;
+      margin: 0 0 60px 0;
     }
   }
 }
@@ -157,7 +165,7 @@
   margin: 0 0 0 41px;
   grid-column: 2 / 3;
   background-color: transparent;
-  outline: 2px solid $color-default-white;
+  border: 2px solid $color-default-white;
   color: $color-default-white;
   cursor: pointer;
   z-index: 1;

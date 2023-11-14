@@ -3,7 +3,7 @@
 }
 
 .games__container {
-  padding: 114px 103px;
+  padding: 117px 103px;
   z-index: 1;
 
   @include vp-1366 {
@@ -48,7 +48,12 @@
 
   @include vp-1366 {
     gap: 9px 42px;
-    margin: 0 0 4px 0;
+    
+  }
+
+  @include vp-768 {
+    gap: 4px 49px;
+    margin: 0 0 8px 0;
   }
 }
 
@@ -97,6 +102,11 @@
     font-size: 18px;
     line-height: 24px;
     margin: 0 0 1px 0;
+  }
+
+  @include vp-768 {
+    font-size: 16px;
+    line-height: 20px;
   }
 
   &::after {
@@ -170,6 +180,12 @@
   @include vp-1366 {
     margin: 0 0 21px 0;
   }
+
+  @include vp-768 {
+    width: 171px;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 .games__button {
   grid-column: span 2;
@@ -191,6 +207,10 @@
     width: 202px;
     height: 56px;
     padding: 20px 41px;
+  }
+
+  @include vp-768 {
+    width: 210px;
   }
 
   @include hover-focus {

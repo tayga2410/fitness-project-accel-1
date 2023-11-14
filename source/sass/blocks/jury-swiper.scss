@@ -42,6 +42,7 @@
     font-size: 32px;
     line-height: 32px;
     letter-spacing: 0.96px;
+    margin: 0 0 42px 0;
   }
 }
 
@@ -61,6 +62,12 @@
   @include vp-1366 {
     font-size: 20px;
     line-height: 20px;
+  }
+
+  @include vp-768 {
+    bottom: 46px;
+    font-size: 22px;
+    line-height: 22px;
   }
 }
 
@@ -130,4 +137,31 @@
 .jury-slide:focus .jury-slide-overlay,
 .jury-slide:active .jury-slide-overlay {
   display: block;
+}
+
+.jury-button-prev {
+  @include vp-768 {
+    top: 28%;
+  }
+}
+
+.jury-button-next {
+  @include vp-768 {
+    top: 27%;
+    right: -53px;
+  }
+}
+
+.jury-button-prev svg {
+  @include vp-768 {
+    width: 10px;
+    height: 19px;
+  }
+}
+
+.jury-button-next svg {
+  @include vp-768 {
+    width: 10px;
+    height: 19px;
+  }
 }

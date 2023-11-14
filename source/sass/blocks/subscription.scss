@@ -48,7 +48,14 @@
       font-size: 42px;
       line-height: 42px;
       letter-spacing: 1.26px;
-      margin: 0 0 25px;
+      margin: 0 0 30px;
+    }
+
+    @include vp-768 {
+      font-size: 32px;
+      line-height: 32px;
+      letter-spacing: 0.96px;
+      margin: 0 0 17px;
     }
   }
 }
@@ -57,7 +64,7 @@
   display: flex;
   align-items: center;
   gap: 50px;
-  margin: 0 auto 51px auto;
+  margin: 0 auto 44px auto;
   width: 349px;
   height: 34px;
   flex-shrink: 0;
@@ -65,10 +72,14 @@
 
   @include vp-1366 {
     width: 334px;
+    gap: 55px;
+    margin: 0 auto 51px auto;
   }
 
   @include vp-768 {
     width: 290px;
+    gap: 45px;
+    margin: 0 auto 42px auto;
   }
 
   &::after {
@@ -141,6 +152,10 @@
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
+
+    @include vp-768 {
+      gap: 35px;
+    }
   }
 
   li {
@@ -149,24 +164,22 @@
     justify-content: center;
     align-items: center;
     width: 360px;
-    height: 448px;
     flex-shrink: 0;
     background: $color-default-white;
-    padding: 48px 77px 65px 78px;
+    border: 7px solid $color-default-white;
+    padding: 59px 69px 59px 71px;
 
     @include vp-1366 {
       width: 440px;
-      height: 438px;
-      padding: 65px 117px;
+      padding: 58px 110px;
     }
 
     @include vp-768 {
       width: 290px;
-      padding: 50px 42px;
+      padding: 43px 35px;
     }
 
     @include hover-focus {
-      border: 7px solid;
       border-image: linear-gradient(
           to right,
           rgba(209, 10, 66, 1),
@@ -189,6 +202,12 @@
       font-size: 24px;
       font-weight: 700;
       line-height: 24px;
+      margin: 0 0 18px 0;
+    }
+
+    @include vp-768 {
+      font-size: 22px;
+      line-height: 22px;
     }
   }
 
@@ -200,7 +219,13 @@
     margin: 0 0 66px 0;
 
     @include vp-1366 {
-      margin: 0 0 63px 0;
+      margin: 0 0 72px 0;
+    }
+
+    @include vp-768 {
+      font-size: 14px;
+      line-height: 22px;
+      margin: 0 0 62px 0;
     }
   }
 
@@ -218,6 +243,15 @@
     display: flex;
     gap: 14px;
     align-items: center;
+
+    @include vp-1366 {
+      margin: 0 0 25px 0;
+    }
+
+    @include vp-768 {
+      font-size: 48px;
+      margin: 0 0 22px 0;
+    }
 
     &::before {
       position: absolute;
@@ -246,13 +280,13 @@
   letter-spacing: 0.6px;
   text-transform: uppercase;
   padding: 27px 44px;
-  outline: 2px solid #102654;
+  border: 2px solid #102654;
   color: #102654;
 
   @include vp-1366 {
     width: 205px;
     height: 56px;
-    padding: 22px 44px;
+    padding: 22px 42px;
   }
 
   @include hover-focus {
