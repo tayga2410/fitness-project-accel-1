@@ -23,6 +23,7 @@
       line-height: 32px;
       letter-spacing: 0.96px;
       padding: 70px 0 0 0;
+      margin: 0 0 42px;
     }
   }
 }
@@ -39,6 +40,7 @@
 
   @include vp-768 {
     padding: 0 15px 70px 15px;
+    gap: 40px;
   }
 }
 
@@ -61,7 +63,7 @@
   @include vp-768 {
     width: 290px;
     text-align: center;
-    padding: 45px 50px 46px 50px;
+    padding: 45px 50px 51px 50px;
   }
 
   h4 {
@@ -74,6 +76,11 @@
     @include vp-1366 {
       margin: 0 0 10px 0;
     }
+
+    @include vp-768 {
+      font-size: 22px;
+      line-height: 22px;
+    }
   }
 
   span {
@@ -85,6 +92,12 @@
 
     @include vp-1366 {
       margin: 0 0 19px 0;
+    }
+
+    @include vp-768 {
+      font-size: 64px;
+      line-height: 64px;
+      margin: 0 0 20px;
     }
   }
 
@@ -101,6 +114,8 @@
     }
 
     @include vp-768 {
+      font-size: 16px;
+      line-height: 20px;
       margin: 0 0 35px 0;
     }
   }
@@ -141,6 +156,11 @@
     background-color: $color-default-white;
     bottom: -2px;
     left: 0;
+
+    @include vp-768 {
+      bottom: -5px;
+      left: 10px;
+    }
   }
 
   @include hover {
@@ -179,6 +199,11 @@
     background-color: #1c3374;
     bottom: -4px;
     left: 0;
+
+    @include vp-768 {
+      bottom: -2px;
+      left: 10px;
+    }
   }
 
   @include focus {
@@ -200,6 +225,7 @@
 
   @include vp-768 {
     flex-direction: column;
+    gap: 27px;
   }
 }
 

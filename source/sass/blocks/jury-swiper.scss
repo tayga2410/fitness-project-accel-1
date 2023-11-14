@@ -19,6 +19,10 @@
   @include vp-1366 {
     padding: 0 0 100px 0;
   }
+
+  @include vp-768 {
+    padding: 0 0 70px 0;
+  }
 }
 
 .jury-title {
@@ -65,7 +69,6 @@
   }
 
   @include vp-768 {
-    bottom: 46px;
     font-size: 22px;
     line-height: 22px;
   }
@@ -82,6 +85,10 @@
   @include vp-1366 {
     width: 268px;
     height: 294px;
+  }
+
+  @include vp-768 {
+    height: 274px;
   }
 }
 
@@ -141,13 +148,13 @@
 
 .jury-button-prev {
   @include vp-768 {
-    top: 28%;
+    top: 32%;
   }
 }
 
 .jury-button-next {
   @include vp-768 {
-    top: 27%;
+    top: 31%;
     right: -53px;
   }
 }

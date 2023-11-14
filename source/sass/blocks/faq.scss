@@ -18,6 +18,14 @@
       text-align: center;
       padding: 100px 0 0 0;
     }
+
+    @include vp-768 {
+      padding: 70px 0 0;
+      font-size: 32px;
+      line-height: 32px;
+      letter-spacing: 0.96px;
+      margin: 0 0 37px 0;
+    }
   }
 }
 .faq__container {
@@ -72,6 +80,7 @@
     font-size: 16px;
     line-height: 16px;
     padding: 14px 48px;
+    height: 44px;
   }
 
   @include hover-focus {
