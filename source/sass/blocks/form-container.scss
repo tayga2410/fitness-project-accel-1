@@ -37,6 +37,7 @@
 
     @include vp-768 {
       width: 100%;
+      min-height: 26px;
     }
 
     @include hover {
@@ -108,7 +109,7 @@
 
   @include vp-768 {
     width: 290px;
-    padding: 22px 106px;
+    padding: 20px 106px;
   }
 }
 

@@ -23,11 +23,16 @@
       line-height: 32px;
       letter-spacing: 0.96px;
       padding: 70px 0 0 0;
+      margin: 0 0 46px 0;
     }
   }
 
   @include vp-1366 {
     padding: 0 0 100px 0;
+  }
+
+  @include vp-768 {
+    padding: 0 0 70px 0;
   }
 }
 
@@ -44,6 +49,7 @@
 
   @include vp-768 {
     max-width: 226px;
+    height: 328px;
   }
 }
 
@@ -71,11 +77,14 @@
     align-items: center;
     width: 226px;
     min-height: 328px;
+    gap: 0;
   }
 
   img {
-    width: 68px;
-    height: 68px;
+    @include vp-768 {
+      width: 68px;
+      height: 68px;
+    }
   }
 }
 
@@ -84,6 +93,7 @@
 
   @include vp-768 {
     width: 176px;
+    text-align: center;
   }
   h6 {
     font-size: 22px;
@@ -101,6 +111,7 @@
     @include vp-768 {
       font-size: 18px;
       line-height: 20px;
+      margin: 10px 0 16px 0;
     }
   }
   p {
@@ -131,7 +142,8 @@
   }
 
   @include vp-768 {
-    right: -55px;
+    top: 54%;
+    right: -53px;
   }
 }
 
@@ -145,6 +157,21 @@
   }
 
   @include vp-768 {
-    left: -55px;
+    top: 55%;
+    left: -53px;
+  }
+}
+
+.reviews-button-prev svg {
+  @include vp-768 {
+    width: 10px;
+    height: 19px;
+  }
+}
+
+.reviews-button-next svg {
+  @include vp-768 {
+    width: 10px;
+    height: 19px;
   }
 }

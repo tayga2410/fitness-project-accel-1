@@ -138,20 +138,20 @@
       gap: 44px;
       padding: 0;
 
-    &::before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 1px;
-      background: rgba(28, 51, 116, 0.2);
-      top: 0;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background: rgba(28, 51, 116, 0.2);
+        top: 0;
 
-      @include vp-768 {
-        top: -25px;
+        @include vp-768 {
+          top: -25px;
+        }
       }
     }
   }
-}
 
   li {
     flex-grow: 1;
@@ -163,7 +163,9 @@
     width: 100%;
 
     &:first-child {
-      gap: 20px;
+      @include vp-768 {
+        gap: 20px;
+      }
     }
 
     &::after {
@@ -176,13 +178,7 @@
     }
   }
 
-  br {
-    display: none;
-
-    @include vp-768 {
-      display: block;
-    }
-  }
+  
 
   h5 {
     margin: 0 auto 0 0;
@@ -232,7 +228,6 @@
   p[data-target="is-opened"] {
     display: block;
   }
-
 }
 
 .faq__button {
@@ -281,7 +276,6 @@
   @include vp-768 {
     width: 14px;
   }
-
 }
 
 .faq__button::after {
@@ -297,7 +291,6 @@
   @include vp-768 {
     height: 14px;
   }
-
 }
 
 .faq__button.is-opened {
@@ -323,7 +316,15 @@
   background-color: #1c3374;
 }
 
-.faq__line-breaker {
+.faq_line-breaker-1 {
+  display: none;
+
+  @include vp-768 {
+    display: block;
+  }
+}
+
+.faq_line-breaker-2 {
   display: none;
 
   @include vp-1366 {

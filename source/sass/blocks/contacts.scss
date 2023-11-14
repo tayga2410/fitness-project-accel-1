@@ -16,25 +16,30 @@
     letter-spacing: 1.26px;
     margin: 0 0 36px 0;
   }
+
+  @include vp-768 {
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 0.96px;
+  }
 }
 
 .contacts__list {
   list-style-type: none;
-  display: grid;
-  grid-template-columns: 170px 110px;
-  grid-column-gap: 118px;
-  row-gap: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 15px 120px;
+  height: 119px;
   margin: 0;
   padding: 0;
 
   @include vp-1366 {
-    grid-column-gap: 140px;
-    row-gap: 27px;
+    gap: 27px 141px;
+    height: 150px;
   }
 
   @include vp-768 {
-    display: flex;
-    flex-direction: column;
     gap: 28px;
   }
 }

@@ -1,7 +1,6 @@
 .footer__container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 
   @include vp-1366 {
     flex-direction: column;
@@ -29,6 +28,8 @@
     font-size: 32px;
     line-height: 32px;
     letter-spacing: 0.96px;
+    margin: 0 0 40px 0;
+
   }
 }
 
@@ -37,7 +38,7 @@
 
   @include vp-1366 {
     width: 100%;
-    padding: 100px 214px 100px 133px;
+   padding: 0;
   }
 
   @include vp-768 {
