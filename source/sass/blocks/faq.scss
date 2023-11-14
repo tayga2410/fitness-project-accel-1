@@ -316,7 +316,7 @@
   background-color: #1c3374;
 }
 
-.faq_line-breaker-1 {
+.faq__line-breaker-1 {
   display: none;
 
   @include vp-768 {
@@ -324,7 +324,7 @@
   }
 }
 
-.faq_line-breaker-2 {
+.faq__line-breaker-2 {
   display: none;
 
   @include vp-1366 {

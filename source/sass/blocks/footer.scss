@@ -29,7 +29,6 @@
     line-height: 32px;
     letter-spacing: 0.96px;
     margin: 0 0 40px 0;
-
   }
 }
 
@@ -38,7 +37,7 @@
 
   @include vp-1366 {
     width: 100%;
-   padding: 0;
+    padding: 100px 214px 100px 133px;
   }
 
   @include vp-768 {
@@ -66,5 +65,6 @@
     flex-direction: column;
     min-height: 260px;
     padding: 30px 15px 40px 15px;
+    align-items: start;
   }
 }
