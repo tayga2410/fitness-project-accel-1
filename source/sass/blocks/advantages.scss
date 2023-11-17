@@ -1,5 +1,6 @@
 .advantages {
   padding: 0;
+  background: #f8f9fc;
 
   h2 {
     font-family: $ff-alumni;
@@ -26,8 +27,9 @@
   }
 }
 .advantages__container {
-  padding: 118px 160px 125px 160px;
-  background: #f8f9fc;
+  padding: 118px 61px 125px 61px;
+  
+  max-width: 1160px;
 
   @include vp-1366 {
     padding: 100px 45px;

@@ -31,6 +31,8 @@
   display: flex;
   gap: 40px;
   padding: 0 103px 120px 103px;
+  justify-content: center;
+  max-width: 1160px;
 
   @include vp-1366 {
     padding: 0 45px 100px 45px;
@@ -59,11 +61,18 @@
   padding: 40px 45px 45px 45px;
   display: flex;
   flex-direction: column;
+  flex: 1;
+
+  @include vp-1366 {
+    min-width: 279px;
+    width: 44%;
+  }
 
   @include vp-768 {
-    width: 290px;
+    min-width: 290px;
     text-align: center;
     padding: 45px 50px 51px 50px;
+    width: 100%;
   }
 
   h4 {
@@ -116,16 +125,18 @@
     @include vp-768 {
       font-size: 16px;
       line-height: 20px;
-      margin: 0 0 35px 0;
+      margin: 0 auto 35px auto;
     }
   }
 }
 
 .promo__image-wrapper {
+  flex: 1;
+
   img {
-    @include vp-1366 {
-      width: 100%;
-    }
+    min-width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
 
@@ -243,13 +254,13 @@
   width: 560px;
 
   @include vp-1366 {
-    width: 324px;
+    width: 50%;
     padding: 23px 38px 34px 28px;
   }
 
   @include vp-768 {
     text-align: center;
-    width: 290px;
+    width: 100%;
     padding: 38px 58px 37px 57px;
   }
 

@@ -2,16 +2,17 @@
   display: flex;
   gap: 145px;
   padding: 120px 103px 235px 103px;
+  justify-content: center;
 
   @include vp-1366 {
     flex-direction: column;
     padding: 100px 45px 183px 45px;
     gap: 0;
-    align-items: center;
   }
 
   @include vp-768 {
     padding: 70px 0;
+    align-items: start;
   }
 }
 
@@ -25,7 +26,8 @@
 
   @include vp-768 {
     text-align: start;
-    width: 289px;
+    width: 294px;
+    padding: 0 0 0 15px;
   }
 
   h2 {
@@ -107,14 +109,23 @@
 
 .about__image-wrapper {
  
-
   @include vp-768 {
     margin: 0 0 40px 0;
   }
 
   img {
-    width: 100%;
+    min-width: 100%;
     height: 100%;
+    object-fit: cover;
+    
+
+    @include vp-1366 {
+      max-height: 345px;
+    }
+
+    @include vp-768 {
+      max-height: 313px;
+    }
   }
 }
 
@@ -169,6 +180,9 @@
     width: 100%;
     height: 100%;
     z-index: 2;
+    min-width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
 

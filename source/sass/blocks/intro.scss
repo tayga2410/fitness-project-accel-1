@@ -14,9 +14,10 @@
   display: flex;
   width: 955px;
   gap: 70px;
-  padding: 0 0 120px 103px;
+  padding: 0 308px 120px 103px;
   margin: 0;
   width: 100%;
+  justify-content: center;
 
   @include vp-1366 {
     padding: 0 45px 95px 45px;
@@ -25,6 +26,7 @@
 
   @include vp-768 {
     padding: 0 15px 70px 15px;
+    justify-content: flex-start;
   }
 
   img {

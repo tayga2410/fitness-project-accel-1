@@ -17,6 +17,9 @@
 
 .games__wrapper {
   display: flex;
+  justify-content: center;
+  max-width: 1160px;
+  margin: 0 auto;
 
   @include vp-768 {
     flex-direction: column;
@@ -31,12 +34,27 @@
   padding: 80px;
 
   @include vp-1366 {
+    min-width: 292px;
     padding: 40px 45px 45px 45px;
   }
 
   @include vp-768 {
+    min-width: 290px;
     width: 100%;
     padding: 40px;
+  }
+}
+
+.games__image-wrapper {
+  img {
+    min-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-height: 500px;
+
+    @include vp-768 {
+      max-height: 292px;
+    }
   }
 }
 .games__text-wrapper {
@@ -49,7 +67,6 @@
   @include vp-1366 {
     gap: 9px 42px;
     margin: 0 0 2px 0;
-    
   }
 
   @include vp-768 {
@@ -191,7 +208,7 @@
 .games__button {
   grid-column: span 2;
   padding: 27px 56px;
-  width: 340px;
+  min-width: 340px;
   height: 66px;
   text-align: center;
   font-size: 12px;
@@ -205,13 +222,13 @@
   border: 2px solid $color-default-white;
 
   @include vp-1366 {
-    width: 202px;
+    min-width: 202px;
     height: 56px;
     padding: 20px 41px;
   }
 
   @include vp-768 {
-    width: 210px;
+    min-width: 210px;
   }
 
   @include hover-focus {

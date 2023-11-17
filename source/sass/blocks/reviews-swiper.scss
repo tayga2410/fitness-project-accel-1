@@ -48,7 +48,7 @@
   }
 
   @include vp-768 {
-    max-width: 226px;
+    width: 226px;
     height: 328px;
   }
 }
@@ -75,7 +75,7 @@
     padding: 30px 25px;
     flex-direction: column;
     align-items: center;
-    width: 226px;
+    min-width: 226px;
     min-height: 328px;
     gap: 0;
   }
@@ -142,7 +142,7 @@
   }
 
   @include vp-768 {
-    top: 54%;
+    top: 41%;
     right: -53px;
   }
 }
@@ -157,7 +157,7 @@
   }
 
   @include vp-768 {
-    top: 55%;
+    top: 42%;
     left: -53px;
   }
 }
