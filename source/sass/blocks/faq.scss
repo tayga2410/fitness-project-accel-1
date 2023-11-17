@@ -36,7 +36,7 @@
   max-width: 1160px;
 
   @include vp-1366 {
-    padding: 0 45px 100px 45px;
+    padding: 0 45px 106px 45px;
     flex-direction: column;
   }
 
@@ -127,15 +127,15 @@
 
   ul {
     list-style-type: none;
-    padding: 25px 0 18px 0;
+    padding: 25px 0 19px 0;
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 47px;
+    gap: 52px;
     position: relative;
 
     @include vp-1366 {
-      gap: 46px;
+      gap: 50px;
     }
 
     @include vp-768 {
@@ -164,7 +164,7 @@
     cursor: pointer;
     width: 100%;
     justify-content: space-between;
-    align-items: stretch;
+    align-items: center;
 
     &:first-child {
       @include vp-768 {
@@ -202,7 +202,7 @@
     }
 
     p {
-      margin: 5px 0 0 0;
+      margin: 0;
       color: #102654;
       font-size: 18px;
       font-style: normal;

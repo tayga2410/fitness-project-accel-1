@@ -145,16 +145,28 @@
 }
 
 .jury-button-prev {
+
+  @include vp-1366 {
+    left: -75px;
+
+  }
   @include vp-768 {
     top: 32%;
   }
 }
 
 .jury-button-next {
+
+  @include vp-1366 {
+    top: 29%;
+    right: -75px;
+  }
   @include vp-768 {
     top: 31%;
     right: -53px;
   }
+
+
 }
 
 .jury-button-prev svg {
