@@ -3,6 +3,7 @@ import {Form} from './modules/form-validate/form';
 import {initSwiper, jurySwiper, reviewsSwiper} from './vendor/init-swiper';
 import initTabs from './vendor/init-tabs';
 import initAccordion from './vendor/init-accordion';
+import {findVideos} from './vendor/init-video';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -17,6 +18,7 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     initTabs();
     initAccordion();
+    findVideos();
     initSwiper(jurySwiper);
     initSwiper(reviewsSwiper);
     const form = new Form();

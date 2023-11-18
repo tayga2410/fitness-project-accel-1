@@ -28,7 +28,7 @@
 }
 .advantages__container {
   padding: 118px 61px 125px 61px;
-  
+
   max-width: 1160px;
 
   @include vp-1366 {
@@ -46,6 +46,43 @@
     display: grid;
     gap: 116px 60px;
     grid-template-columns: 32.7% 23.1% 32.7%;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 340px;
+      height: 2px;
+      background-color: rgba(209, 10, 66, 0.2);
+      top: 51%;
+      left: 0;
+
+      @include vp-1366 {
+        display: none;
+      }
+
+      @include vp-768 {
+        display: none;
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 340px;
+      height: 2px;
+      background-color: rgba(209, 10, 66, 0.2);
+      top: 51%;
+      right: 0;
+
+      @include vp-1366 {
+        display: none;
+      }
+
+      @include vp-768 {
+        display: none;
+      }
+    }
 
     @include vp-1366 {
       grid-template-columns: 1fr 1fr;
@@ -168,7 +205,7 @@
       line-height: 22px;
     }
   }
-  
+
   br {
     display: none;
 

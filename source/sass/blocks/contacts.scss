@@ -33,6 +33,27 @@
   height: 119px;
   margin: 0;
   padding: 0;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 117px;
+    background-color: #74819C;
+    top: 3px;
+    left: 220px;
+
+    @include vp-1366 {
+      height: 137px;
+      left: 252px;
+    }
+
+    @include vp-768 {
+      display: none;
+    }
+
+  }
 
   @include vp-1366 {
     gap: 27px 141px;
