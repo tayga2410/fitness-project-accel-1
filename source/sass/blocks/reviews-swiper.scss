@@ -39,7 +39,7 @@
 .reviews-container {
   max-width: 560px;
   position: relative;
-  padding: 0 0 121px;
+  padding: 0 0 120px;
 
   @include vp-1366 {
     padding: 0;
@@ -112,7 +112,7 @@
     @include vp-768 {
       font-size: 18px;
       line-height: 20px;
-      margin: 10px 0 16px;
+      margin: 10px 0 17px;
     }
   }
 
@@ -138,6 +138,7 @@
 .reviews-button-next {
   font-size: 0;
   top: 26%;
+  right: -76px;
 
   @include vp-1366 {
     top: 37%;

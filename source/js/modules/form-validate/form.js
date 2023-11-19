@@ -95,13 +95,10 @@ export class Form {
         if (this.isNameAndPhoneValid(event.target)) {
           this._onFormSubmit(event, callback);
         } else {
-          // Если условия не выполнены, предотвратить отправку формы
           event.preventDefault();
-          // Здесь можно показать пользователю сообщение об ошибке или совершить другие действия
         }
       } else {
         event.preventDefault();
-        // Если вся форма не прошла валидацию, предотвратить отправку и предпринять необходимые действия
       }
     });
 

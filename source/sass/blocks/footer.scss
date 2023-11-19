@@ -33,16 +33,16 @@
 }
 
 .footer__contacts {
-  padding: 60px 163px 64px 120px;
+  padding: 60px 163px 59px 120px;
   width: 50%;
 
   @include vp-1366 {
     width: 100%;
-    padding: 100px 214px 100px 133px;
+    padding: 105px 214px 100px 133px;
   }
 
   @include vp-768 {
-    padding: 70px 135px 70px 15px;
+    padding: 67px 135px 70px 15px;
   }
 }
 

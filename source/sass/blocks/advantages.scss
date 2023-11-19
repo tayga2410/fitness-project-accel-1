@@ -10,12 +10,13 @@
     line-height: 54px;
     letter-spacing: 1.62px;
     text-align: center;
-    margin: 0 0 50px;
+    margin: 0 0 51px;
 
     @include vp-1366 {
       font-size: 42px;
       line-height: 42px;
       letter-spacing: 1.26px;
+      margin: 0 0 50px;
     }
 
     @include vp-768 {
@@ -28,7 +29,7 @@
 }
 
 .advantages__container {
-  padding: 118px 61px 125px;
+  padding: 120px 60px 125px;
   max-width: 1160px;
 
   @include vp-1366 {
@@ -36,7 +37,7 @@
   }
 
   @include vp-768 {
-    padding: 70px 0 50px;
+    padding: 70px 0 49px;
   }
 
   ul {
@@ -44,7 +45,7 @@
     padding: 0;
     list-style: none;
     display: grid;
-    gap: 116px 60px;
+    gap: 118px 60px;
     grid-template-columns: 32.7% 23.1% 32.7%;
     position: relative;
 
@@ -86,14 +87,14 @@
 
     @include vp-1366 {
       grid-template-columns: 1fr 1fr;
-      gap: 14px 49px;
+      gap: 14px 52px;
       justify-self: center;
     }
 
     @include vp-768 {
       display: flex;
       flex-direction: column;
-      gap: 35px;
+      gap: 36px;
     }
   }
 
@@ -108,7 +109,7 @@
     }
   }
 
-  li.is-centered {
+  .is-centered {
     grid-column: 2/3;
     grid-row: 1/3;
 
@@ -217,10 +218,11 @@
 }
 
 .advantages__centered-item {
+  margin: 3px 0 0;
   background-color: #1c3374;
   display: flex;
   flex-direction: column;
-  padding: 73px 34px 76px;
+  padding: 67px 34px 76px;
   width: 240px;
   grid-column: 2/3;
   height: 100%;
@@ -228,7 +230,13 @@
 
   @include vp-1366 {
     width: 100%;
-    padding: 30px 0 40px;
+    padding: 35px;
+    margin: 0;
+  }
+
+  @include vp-768 {
+    margin: 3px 0 4px;
+    padding: 31px 0 39px;
   }
 
   span {
@@ -258,7 +266,7 @@
     font-weight: 700;
     line-height: 26px;
     text-align: center;
-    margin: 0 0 37px;
+    margin: 0 0 36px;
 
     @include vp-1366 {
       font-size: 24px;

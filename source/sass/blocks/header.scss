@@ -23,7 +23,6 @@
 }
 
 .header__image {
-
   @include vp-1366 {
     width: 111px;
     height: 24px;
@@ -36,8 +35,8 @@
 
   img {
     @include vp-768 {
-    width: 98.3px;
-    height: 16px;
+      width: 98.3px;
+      height: 16px;
     }
   }
 }

@@ -39,7 +39,7 @@
   @include vp-1366 {
     padding: 0 45px 100px;
     flex-direction: column;
-    gap: 31px;
+    gap: 30px;
   }
 
   @include vp-768 {
@@ -67,16 +67,17 @@
   @include vp-1366 {
     max-width: 279px;
     width: 44%;
+    padding: 45px;
   }
 
   @include vp-768 {
     min-width: 290px;
     text-align: center;
-    padding: 45px 50px 51px;
+    padding: 45px 50px 49px;
     width: 100%;
   }
 
-  h3 {
+  span {
     font-size: 26px;
     font-style: normal;
     font-weight: 700;
@@ -84,7 +85,7 @@
     margin: 0 0 15px;
 
     @include vp-1366 {
-      margin: 0 0 10px;
+      margin: 0 0 5px;
       font-size: 24px;
       line-height: 24px;
     }
@@ -92,10 +93,11 @@
     @include vp-768 {
       font-size: 22px;
       line-height: 22px;
+      margin: 0 0 9px;
     }
   }
 
-  span {
+  span + span {
     font-size: 70px;
     font-style: normal;
     font-weight: 700;
@@ -103,7 +105,7 @@
     margin: 0 0 25px;
 
     @include vp-1366 {
-      margin: 0 0 19px;
+      margin: 0 0 20px;
     }
 
     @include vp-768 {
@@ -122,13 +124,13 @@
     margin: 0 0 176px;
 
     @include vp-1366 {
-      margin: 0 0 186px;
+      margin: 0 0 189px;
     }
 
     @include vp-768 {
       font-size: 16px;
       line-height: 20px;
-      margin: 0 auto 35px;
+      margin: 0 auto 37px;
     }
   }
 }
@@ -171,7 +173,7 @@
     left: 0;
 
     @include vp-768 {
-      bottom: -5px;
+      bottom: -3px;
       left: 10px;
     }
   }
@@ -214,7 +216,7 @@
     left: 0;
 
     @include vp-768 {
-      bottom: -2px;
+      bottom: -4px;
       left: 10px;
     }
   }
@@ -238,7 +240,7 @@
 
   @include vp-768 {
     flex-direction: column;
-    gap: 27px;
+    gap: 30px;
   }
 }
 
@@ -283,6 +285,7 @@
     @include vp-768 {
       font-size: 22px;
       line-height: 22px;
+      margin: 0 0 10px;
     }
   }
 
@@ -297,14 +300,14 @@
     @include vp-1366 {
       width: 234px;
       height: 48px;
-      margin: 0 0 45px;
+      margin: 0 0 44px;
     }
 
     @include vp-768 {
       width: 160px;
       font-size: 14px;
       line-height: 22px;
-      margin: 0 auto 31px;
+      margin: 0 auto 28px;
     }
   }
 }
