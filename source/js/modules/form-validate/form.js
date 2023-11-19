@@ -128,5 +128,3 @@ export class Form {
     this._validateParent.forEach((parent) => this._initValidate(parent));
   }
 }
-
-

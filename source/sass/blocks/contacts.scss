@@ -1,6 +1,6 @@
 .contacts__header {
   color: #102654;
-  margin: 0 0 40px 0;
+  margin: 0 0 40px;
   font-family: $ff-alumni;
   font-size: 54px;
   font-style: normal;
@@ -9,18 +9,18 @@
   letter-spacing: 1.62px;
 
   @include vp-1366 {
-    font-size: 42px;
-    line-height: normal;
-    letter-spacing: 1.26px;
+    line-height: 42px;
     font-size: 42px;
     letter-spacing: 1.26px;
-    margin: 0 0 36px 0;
+    margin: 0 0 36px;
+    font-weight: 700;
   }
 
   @include vp-768 {
     font-size: 32px;
     line-height: 32px;
     letter-spacing: 0.96px;
+    font-weight: 600;
   }
 }
 
@@ -40,7 +40,7 @@
     position: absolute;
     width: 1px;
     height: 117px;
-    background-color: #74819C;
+    background-color: #74819c;
     top: 3px;
     left: 220px;
 
@@ -52,7 +52,6 @@
     @include vp-768 {
       display: none;
     }
-
   }
 
   @include vp-1366 {
@@ -73,7 +72,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
-  margin: 0 0 5px 0;
+  margin: 0 0 5px;
 
   @include vp-1366 {
     font-size: 22px;
@@ -87,10 +86,15 @@
     margin: 0 0 12px;
   }
 }
+
 .contacts__description {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
   margin: 0;
+
+  @include vp-768 {
+    line-height: 20px;
+  }
 }

@@ -6,40 +6,40 @@
     font-weight: 600;
     line-height: 54px;
     letter-spacing: 1.62px;
-    margin: 0 0 46px 0;
+    margin: 0 0 46px;
     text-align: center;
-    padding: 120px 0 0 0;
+    padding: 120px 0 0;
 
     @include vp-1366 {
       font-size: 42px;
       line-height: 42px;
       letter-spacing: 1.26px;
-      margin: 0 0 42px 0;
-      padding: 100px 0 0 0;
+      margin: 0 0 42px;
+      padding: 100px 0 0;
     }
 
     @include vp-768 {
       font-size: 32px;
       line-height: 32px;
       letter-spacing: 0.96px;
-      padding: 70px 0 0 0;
-      margin: 0 0 46px 0;
+      padding: 70px 0 0;
+      margin: 0 0 46px;
     }
   }
 
   @include vp-1366 {
-    padding: 0 0 100px 0;
+    padding: 0 0 100px;
   }
 
   @include vp-768 {
-    padding: 0 0 70px 0;
+    padding: 0 0 70px;
   }
 }
 
 .reviews-container {
   max-width: 560px;
   position: relative;
-  padding: 0 0 121px 0;
+  padding: 0 0 121px;
 
   @include vp-1366 {
     padding: 0;
@@ -60,7 +60,7 @@
   padding: 60px;
   color: $color-default-white;
   background: #1c3374;
-  box-shadow: 0px 0px 40px 0px rgba(28, 51, 116, 0.2);
+  box-shadow: 0 0 40px 0 rgba(28, 51, 116, 0.2);
   gap: 30px;
   margin: 0;
   position: relative;
@@ -95,25 +95,27 @@
     width: 176px;
     text-align: center;
   }
-  h6 {
+
+  h3 {
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
     line-height: 22px; /* 100% */
-    margin: 0 0 21px 0;
+    margin: 0 0 21px;
 
     @include vp-1366 {
       font-size: 20px;
       line-height: 20px;
-      margin: 0 0 13px 0;
+      margin: 0 0 13px;
     }
 
     @include vp-768 {
       font-size: 18px;
       line-height: 20px;
-      margin: 10px 0 16px 0;
+      margin: 10px 0 16px;
     }
   }
+
   p {
     font-size: 16px;
     font-style: normal;
@@ -134,6 +136,7 @@
 }
 
 .reviews-button-next {
+  font-size: 0;
   top: 26%;
 
   @include vp-1366 {
@@ -148,6 +151,7 @@
 }
 
 .reviews-button-prev {
+  font-size: 0;
   top: 27%;
   left: -77px;
 

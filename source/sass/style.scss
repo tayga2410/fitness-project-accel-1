@@ -13,6 +13,7 @@
 
 @import "vendor/normalize";
 @import "vendor/swiper";
+
 // Blocks
 // ---------------------------------
 
@@ -39,6 +40,7 @@
 // ❗❗❗ запрещено использовать изображения в css, касается как jpg \ png, так и svg
 
 // ❗ обязательно используйте mixin hover-focus для отключения ховеров на тач устройствах
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -51,13 +53,15 @@
     }
   }
 */
+
 /*  @include hover-focus {
       opacity: 0.8;
     }
 */
 // но не используем для текстовых полей ( input, textarea )
 // так же в сборке есть отдельный миксин для hover
-/*@mixin hover {
+
+/* @mixin hover {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
         @content;
@@ -66,14 +70,16 @@
   }
 */
 // для focus
-/*@mixin focus {
+
+/* @mixin focus {
     &.focus-visible:focus {
       @content;
     }
   }
 */
 // и для active
-/*@mixin active {
+
+/* @mixin active {
     &.focus-visible:active {
       @content;
     }
