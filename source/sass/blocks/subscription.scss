@@ -242,7 +242,6 @@
   }
 
   p {
-    color: rgb(16, 38, 84);
     font-size: 16px;
     font-style: normal;
     font-weight: 300;
@@ -254,7 +253,6 @@
 
     @include vp-1366 {
       margin: 0 0 72px;
-      color: #495a7d;
     }
 
     @include vp-768 {
@@ -304,6 +302,7 @@
       opacity: 0.48;
     }
   }
+
   .is-selected {
     border-image:
       linear-gradient(
@@ -315,9 +314,9 @@
   }
 }
 
-.subscription__tabs p:first-child {
+.subscription__text--time-duration {
   @include vp-1366 {
-    color: #102654;
+    color: #495a7d;
   }
 }
 

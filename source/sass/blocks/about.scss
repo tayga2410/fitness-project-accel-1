@@ -67,7 +67,6 @@
       font-size: 20px;
       line-height: 20px;
       margin: 0 0 34px;
-      width: 500px;
     }
 
     @include vp-768 {
@@ -122,11 +121,11 @@
 
 
     @include vp-1366 {
-      max-height: 345px;
+      height: 345px;
     }
 
     @include vp-768 {
-      max-height: 313px;
+      height: 313px;
     }
   }
 }

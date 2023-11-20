@@ -13,7 +13,7 @@ function initAccordion() {
       const content = firstAccordionItem.querySelector("p");
       firstAccordionItem.classList.add("is-opened");
       content.style.maxHeight = content.scrollHeight + "px";
-    } 
+    }
   };
 
   openFirstAccordion();

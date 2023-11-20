@@ -154,7 +154,6 @@
     }
   }
 
-
   li {
     display: flex;
     flex-wrap: wrap;
@@ -165,6 +164,12 @@
     align-items: center;
 
     &:first-child {
+      gap: 4px;
+
+      @include vp-1366 {
+        gap: 1px;
+      }
+
       @include vp-768 {
         gap: 20px;
       }
@@ -233,16 +238,7 @@
 .faq__accordion-wrapper p .is-opened {
   margin: 4px 0 0;
   display: block;
-
-  @include vp-1366 {
-    margin: 1px 0 0;
-  }
-
-  @include vp-768 {
-    margin: 0;
-  }
 }
-
 
 .faq__accordion-wrapper.is-active {
   opacity: 1;
