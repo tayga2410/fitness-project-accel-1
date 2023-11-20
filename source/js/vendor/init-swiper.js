@@ -17,13 +17,13 @@ const jurySwiperOptions = {
       slidesPerView: 1,
       spaceBetween: 0,
       initialSlide: 2,
-      allowTouchMove,
+      allowTouchMove: true,
     },
     768: {
       slidesPerView: 2,
       spaceBetween: 32,
       initialSlide: 2,
-      allowTouchMove,
+      allowTouchMove: true,
     },
     1366: {
       slidesPerView: 4,
@@ -35,7 +35,7 @@ const jurySwiperOptions = {
 const reviewsSwiperOptions = {
   slidesPerView: 1,
   spaceBetween: 0,
-  allowTouchMove,
+  allowTouchMove: true,
   loop: reviewsSwiperLoop,
   navigation: {
     nextEl: '[data-swiper="review-container"] [data-swiper="button-next"]',
