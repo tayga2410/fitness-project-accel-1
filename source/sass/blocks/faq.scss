@@ -94,7 +94,7 @@
   }
 
   @include hover-focus {
-    border: 1px solid #102654;
+    border: 1px solid $color-default-black;
   }
 
   @include active {
@@ -211,7 +211,7 @@
 
   p {
     margin: 0;
-    color: #102654;
+    color: $color-default-black;
     font-size: 18px;
     font-style: normal;
     font-weight: 300;

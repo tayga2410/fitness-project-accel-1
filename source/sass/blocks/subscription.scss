@@ -122,11 +122,11 @@
   }
 
   @include hover-focus {
-    color: #102654;
+    color: $color-default-black;
   }
 
   @include active {
-    color: #103654;
+    color: $color-default-black;
   }
 
   @include disabled {
@@ -138,7 +138,7 @@
 }
 
 .subscription__tabs-control--is-selected {
-  color: #102654;
+  color: $color-default-black;
 
   &::after {
     content: "";
@@ -220,7 +220,7 @@
   }
 
   h3 {
-    color: #102654;
+    color: $color-default-black;
     text-align: center;
     font-size: 26px;
     font-style: normal;
@@ -329,8 +329,8 @@
   letter-spacing: 0.6px;
   text-transform: uppercase;
   padding: 25px 42px;
-  border: 2px solid #102654;
-  color: #102654;
+  border: 2px solid $color-default-black;
+  color: $color-default-black;
   width: 205px;
 
   @include vp-1366 {

@@ -191,7 +191,7 @@
 
   @include active {
     background-color: $color-default-white;
-    color: #102654;
+    color: $color-default-black;
   }
 
   @include disabled {

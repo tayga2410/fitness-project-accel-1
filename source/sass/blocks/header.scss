@@ -65,8 +65,8 @@
   }
 
   @include active {
-    color: #102654;
-    border-bottom: 1px solid #102654;
+    color: $color-default-black;
+    border-bottom: 1px solid $color-default-black;
   }
 
   @include disabled {

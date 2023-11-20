@@ -206,11 +206,11 @@
   }
 
   @include hover-focus {
-    border: 2px solid #102654;
+    border: 2px solid $color-default-black;
   }
 
   @include active {
-    border: 2px solid #102654;
+    border: 2px solid $color-default-black
   }
 
   @include disabled {
@@ -291,11 +291,11 @@
 .about__iframe-button:hover::after,
 .about__iframe-button:focus::after,
 .about__iframe-button:active::after {
-  border-color: transparent transparent transparent #102654;
+  border-color: transparent transparent transparent $color-default-black;
 }
 
 .about__iframe-button:disabled::after {
-  border-color: transparent transparent transparent #102654;
+  border-color: transparent transparent transparent $color-default-black;
   opacity: 0.4;
   cursor: not-allowed;
   pointer-events: none;

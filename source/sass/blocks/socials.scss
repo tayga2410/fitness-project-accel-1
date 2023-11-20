@@ -12,7 +12,7 @@
   }
 
   @include active {
-    background-color: #102654;
+    background-color: $color-default-black;
     color: $color-default-white;
   }
 

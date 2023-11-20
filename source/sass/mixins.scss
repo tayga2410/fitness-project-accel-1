@@ -39,7 +39,8 @@
 }
 
 @mixin disabled {
-  &:disabled {
+  &:disabled,
+  &--disabled {
     @content;
   }
 }
