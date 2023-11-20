@@ -210,7 +210,7 @@
   }
 
   @include active {
-    border: 2px solid $color-default-black
+    border: 2px solid $color-default-black;
   }
 
   @include disabled {
