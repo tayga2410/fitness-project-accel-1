@@ -56,11 +56,6 @@
       "sizes": "60x60"
     },
     {
-      "src": "img/favicons/apple-72.png",
-      "type": "image/png",
-      "sizes": "72x72"
-    },
-    {
       "src": "img/favicons/apple-76.png",
       "type": "image/png",
       "sizes": "76x76"
@@ -79,11 +74,6 @@
       "src": "img/favicons/apple-icon.png",
       "type": "image/png",
       "sizes": "180x180"
-    },
-    {
-      "src": "img/favicons/apple-192.png",
-      "type": "image/png",
-      "sizes": "192x192"
     }
   ]
 }
