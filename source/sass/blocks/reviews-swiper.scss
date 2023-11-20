@@ -56,7 +56,7 @@
 .reviews-slide {
   display: flex;
   max-width: 560px;
-  height: 259px;
+  min-height: 259px;
   padding: 60px;
   color: $color-default-white;
   background: #1c3374;
@@ -68,7 +68,7 @@
   @include vp-1366 {
     padding: 60px 65px;
     max-width: 580px;
-    height: 249px;
+    min-height: 249px;
   }
 
   @include vp-768 {

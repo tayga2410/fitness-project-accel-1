@@ -68,6 +68,24 @@
   }
 }
 
+.contacts__item--telephone {
+  @include vp-768 {
+    order: 1;
+  }
+}
+
+.contacts__item--working-hours {
+  @include vp-768 {
+    order: 0;
+  }
+}
+
+.contacts__item--e-mail {
+  @include vp-768 {
+    order: 3;
+  }
+}
+
 .contacts__title {
   font-size: 24px;
   font-style: normal;

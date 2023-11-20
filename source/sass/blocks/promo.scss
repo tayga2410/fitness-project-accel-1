@@ -83,6 +83,7 @@
     font-weight: 700;
     line-height: 26px;
     margin: 0 0 15px;
+    max-width: 41px;
 
     @include vp-1366 {
       margin: 0 0 5px;
@@ -94,8 +95,10 @@
       font-size: 22px;
       line-height: 22px;
       margin: 0 0 9px;
+      max-width: 189px;
     }
   }
+
 
   span + span {
     font-size: 70px;
@@ -103,6 +106,7 @@
     font-weight: 700;
     line-height: 70px;
     margin: 0 0 25px;
+    max-width: 190px;
 
     @include vp-1366 {
       margin: 0 0 20px;

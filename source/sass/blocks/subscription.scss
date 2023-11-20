@@ -72,7 +72,7 @@
   gap: 50px;
   margin: 0 auto 44px;
   width: 349px;
-  height: 34px;
+  min-height: 34px;
   flex-shrink: 0;
   position: relative;
 
@@ -183,7 +183,7 @@
     justify-content: center;
 
     @include vp-768 {
-      gap: 35px;
+      gap: 32px;
     }
   }
 
@@ -248,7 +248,7 @@
     line-height: 24px;
     margin: 0 0 66px;
     max-width: 95px;
-    max-height: 24px;
+    min-height: 24px;
 
 
     @include vp-1366 {
